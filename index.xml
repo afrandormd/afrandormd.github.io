@@ -1,0 +1,9 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>afrandormd</title>
+        <link>http://afrandormd.github.io/</link>
+        <description>afrandormd</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language>
+            <atom:link href="http://afrandormd.github.io/index.xml" rel="self" type="application/rss+xml" />
+        </channel>
+</rss>

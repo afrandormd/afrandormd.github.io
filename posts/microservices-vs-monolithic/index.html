@@ -1,0 +1,304 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noodp" />
+    <title>Memahami Arsitektur Monolithic &amp; Microservices: Perbandingan, Kelebihan dan kekurangannya - afrandormd</title><meta name="Description" content="Memahami dua arsitektur pemrograman yang sering digunakan serta mengenal kelebihan dan kekurangan dari masing masing arsitektur."><meta property="og:title" content="Memahami Arsitektur Monolithic &amp; Microservices: Perbandingan, Kelebihan dan kekurangannya" />
+<meta property="og:description" content="Memahami dua arsitektur pemrograman yang sering digunakan serta mengenal kelebihan dan kekurangan dari masing masing arsitektur." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://afrandormd.github.io/posts/microservices-vs-monolithic/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-03-08T03:39:32+07:00" />
+<meta property="article:modified_time" content="2024-03-08T03:39:32+07:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Memahami Arsitektur Monolithic &amp; Microservices: Perbandingan, Kelebihan dan kekurangannya"/>
+<meta name="twitter:description" content="Memahami dua arsitektur pemrograman yang sering digunakan serta mengenal kelebihan dan kekurangan dari masing masing arsitektur."/>
+<meta name="application-name" content="afrandormd">
+<meta name="apple-mobile-web-app-title" content="afrandormd">
+
+<meta name="theme-color" content="#f8f8f8"><meta name="twitter:creator" content="@map[id:afrandormd prefix:https://twitter.com/ title:Twitter weight:2]" /><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="canonical" href="https://afrandormd.github.io/posts/microservices-vs-monolithic/" />
+<link rel="stylesheet" href="/css/main.css"><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/color.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/fontawesome-free/all.min.css">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/animate/animate.min.css">
+        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Memahami Arsitektur Monolithic \u0026 Microservices: Perbandingan, Kelebihan dan kekurangannya",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://afrandormd.github.io/posts/microservices-vs-monolithic/"
+        },"genre": "posts","keywords": "Microservices","wordcount":  703 ,
+        "url": "https://afrandormd.github.io/posts/microservices-vs-monolithic/","datePublished": "2024-03-08T03:39:32+07:00","dateModified": "2024-03-08T03:39:32+07:00","publisher": {
+            "@type": "Organization",
+            "name": "afrandormd"},"authors": [{
+                        "@type": "Person",
+                        "name": "Afrando"                    
+                    }],"description": "Memahami dua arsitektur pemrograman yang sering digunakan serta mengenal kelebihan dan kekurangan dari masing masing arsitektur."
+    }
+    </script></head>
+
+<body header-desktop="" header-mobile=""><script type="text/javascript">
+        function setTheme(theme) {document.body.setAttribute('theme', theme); document.documentElement.style.setProperty('color-scheme', theme === 'light' ? 'light' : 'dark'); window.theme = theme;   window.isDark = window.theme !== 'light' }
+        function saveTheme(theme) {window.localStorage && localStorage.setItem('theme', theme);}
+        function getMeta(metaName) {const metas = document.getElementsByTagName('meta'); for (let i = 0; i < metas.length; i++) if (metas[i].getAttribute('name') === metaName) return metas[i]; return '';}
+        if (window.localStorage && localStorage.getItem('theme')) {let theme = localStorage.getItem('theme');theme === 'light' || theme === 'dark' || theme === 'black' ? setTheme(theme) : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light')); } else { if ('' === 'light' || '' === 'dark' || '' === 'black') setTheme(''), saveTheme(''); else saveTheme('auto'), window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light');}
+        let metaColors = {'light': '#f8f8f8','dark': '#252627','black': '#000000'}
+        getMeta('theme-color').content = metaColors[document.body.getAttribute('theme')];
+        window.switchThemeEventSet = new Set()
+    </script>
+    <div id="back-to-top"></div>
+    <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="afrandormd"><span class="header-title-pre"><i class='fas fa-laptop-code'></i></span><span id="desktop-header-typeit" class="typeit"></span></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts <i class='fas fa-edit'></i></a><a class="menu-item" href="/tags/"> Tags <i class='fas fa-tags'></i></a><a class="menu-item" href="/projects/"> Projects <i class='fas fa-code'></i></a><a class="menu-item" href="/certificate/"> Certificate <i class='fas fa-ribbon'></i></a><a class="menu-item" href="/about/"> About <i class='fas fa-user'></i></a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="afrandormd"><span class="header-title-pre"><i class='fas fa-laptop-code'></i></span><span id="mobile-header-typeit" class="typeit"></span></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">Posts<i class='fas fa-edit'></i></a><a class="menu-item" href="/tags/" title="">Tags<i class='fas fa-tags'></i></a><a class="menu-item" href="/projects/" title="">Projects<i class='fas fa-code'></i></a><a class="menu-item" href="/certificate/" title="">Certificate<i class='fas fa-ribbon'></i></a><a class="menu-item" href="/about/" title="">About<i class='fas fa-user'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+            <div class="container"><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Memahami Arsitektur Monolithic &amp; Microservices: Perbandingan, Kelebihan dan kekurangannya</h1><div class="post-meta">
+            <div class="post-meta-line">
+                <span class="post-author"><span class='author'><span class="author fas fa-user-circle fa-fw"></span><span class='screen-reader-text'>  </span><a href='https://afrandormd.github.io/authors/afrando'>Afrando</a></span>
+                </span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2024-03-08">2024-03-08</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2024-03-08">2024-03-08</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;703 words&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;4 minutes&nbsp;</div>
+        </div><div class="featured-image"><img
+        
+        loading="eager"
+        src="/img/posts/microservices/arsitektur-micro-mono.png"
+        srcset="/img/posts/microservices/arsitektur-micro-mono.png, /img/posts/microservices/arsitektur-micro-mono.png 1.5x, /img/posts/microservices/arsitektur-micro-mono.png 2x"
+        title="Memahami dua arsitektur pemrograman yang sering digunakan serta mengenal kelebihan dan kekurangan dari masing masing arsitektur." ></div><div class="content" id="content"><p>Dalam dunia pengembangan perangkat lunak, pemilihan arsitektur aplikasi menjadi langkah krusial yang akan memengaruhi kinerja, skalabilitas, dan fleksibilitas sebuah sistem. Dua pendekatan utama yang sering dibahas adalah Monolithic dan Microservices. Dalam artikel ini, kita akan memperbandingkan kedua arsitektur ini, melihat kelebihan, kekurangan, serta situasi yang tepat untuk menerapkan masing-masing.</p>
+<h1 id="pengenalan-monolithic-arsitektur" class="headerLink">
+    <a href="#pengenalan-monolithic-arsitektur" class="header-mark"></a>Pengenalan Monolithic Arsitektur</h1><p><strong>Monolithic Arsitektur</strong> ialah cara membuat atau membangun aplikasi yang dimana komponen / modul yang berbeda digabungkan menjadi satu program atau 1 codebase.</p>
+<h2 id="contoh-diagram-aplikasi-monolithic" class="headerLink">
+    <a href="#contoh-diagram-aplikasi-monolithic" class="header-mark"></a>Contoh Diagram Aplikasi Monolithic</h2><pre class="mermaid">flowchart LR;
+    A[Client Web / Mobile App] --> B(Load Balancer)
+    B --> APLIKASI
+    subgraph APLIKASI
+        D>Catalog]
+        E{{Order}}
+        F[/Payment/]
+    end
+    APLIKASI --> G[(Database)]
+    style A fill:#ffe28f,color:#000
+    style B fill:grey,color:#000
+    style D fill:#9bbbf3,color:black
+    style E fill:#ad9dd1,color:black
+    style F fill:#a76485,color:black
+    style APLIKASI fill:#d4e6ce,color:#000
+    style G fill:#e5c9d4,color:#000
+
+</pre>
+<p><strong>Penjelasan</strong><br>
+Diagram tersebut menggambarkan bagaimana aplikasi monolithic beroperasi. Client (pengguna) terhubung ke aplikasi melalui load balancer. Aplikasi ini memiliki tiga fitur utama (Catalog, Order, Payment) yang berinteraksi dengan database untuk menyimpan dan mengambil data. Ini adalah pendekatan yang umum digunakan dalam pengembangan aplikasi sebelum adanya arsitektur microservices yang lebih modern.</p>
+<h2 id="kelebihan-aplikasi-monolithic" class="headerLink">
+    <a href="#kelebihan-aplikasi-monolithic" class="header-mark"></a>Kelebihan Aplikasi Monolithic</h2><ol>
+<li>Mudah untuk di develop.</li>
+<li>Simple untuk di deploy.</li>
+<li>Simple untuk di scale secara vertikal.</li>
+<li>Gampang untuk di test.</li>
+</ol>
+<h2 id="kekurangan-aplikasi-monolithic" class="headerLink">
+    <a href="#kekurangan-aplikasi-monolithic" class="header-mark"></a>Kekurangan Aplikasi Monolithic</h2><ol>
+<li>Mengintimidasi programmer baru.</li>
+<li>Overloaded IDE.</li>
+<li>Ketika deploy, berarti kita mendeploy seluruh code / seluruh aplikasi.</li>
+<li>Susah ketika mau scale terlebih secara horizontal.</li>
+<li>Ketika ada error, maka 1 aplikasi akan terpengaruh bahkan mati.</li>
+<li>Susah untuk mengadopsi teknologi baru.</li>
+</ol>
+<div class="details admonition tip">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-lightbulb fa-fw"></i>apa itu scale?<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><strong>&ldquo;Scaling&rdquo;</strong> dalam konteks pengembangan aplikasi merujuk pada kemampuan aplikasi untuk menangani pertumbuhan beban kerja atau traffic. Ada dua cara umum untuk melakukan scaling: scaling vertikal (vertical scaling) dan scaling horizontal (horizontal scaling).<br>
+<strong>Scale Vertikal</strong>: Meningkatkan spesifikasi seperti kapasitas (RAM, CPU) pada satu instance atau node aplikasi.<br>
+<strong>Scale Horizontal</strong>: Menambahkan lebih banyak instance atau node ke dalam aplikasi untuk mendistribusikan beban kerja.</div>
+        </div>
+    </div>
+<h1 id="pengenalan-microservices-arsitektur" class="headerLink">
+    <a href="#pengenalan-microservices-arsitektur" class="header-mark"></a>Pengenalan Microservices Arsitektur</h1><p><strong>Microservices arsitektur</strong> ialah sebuah arsitektur aplikasi yang dibangun dari kumpulan service - service kecil yang saling terhubung.</p>
+<h2 id="contoh-diagram-aplikasi-microservices" class="headerLink">
+    <a href="#contoh-diagram-aplikasi-microservices" class="header-mark"></a>Contoh Diagram Aplikasi Microservices</h2><pre class="mermaid">flowchart LR;
+    subgraph APLIKASI
+        D>Catalog] --> db1[(Database)] 
+        E(Order) --> db2[(Database)]
+        F[/Payment/] --> db3[(Database)]
+    end
+    style D fill:#9bbbf3,color:black
+    style E fill:#ad9dd1,color:black
+    style F fill:#a76485,color:black
+    style APLIKASI fill:#fff,color:#000
+    style db1 fill:grey,color:white
+    style db2 fill:grey,color:white
+    style db3 fill:gray,color:white
+
+</pre>
+<p><strong>Penjelasan</strong><br>
+Dalam arsitektur microservices pada diagram di atas, setiap layanan (Catalog, Order, dan Payment) memiliki tugasnya sendiri dan terpisah, memungkinkan aplikasi untuk lebih modular dan mudah di-maintain. Masing-masing layanan memiliki akses ke database yang khusus untuk fungsinya sendiri. Hal ini memungkinkan pengembang untuk mengubah, memperbarui, atau memperbaiki satu layanan tanpa memengaruhi layanan lainnya. Arsitektur ini membantu dalam pengembangan aplikasi yang lebih fleksibel, scalable, dan dapat dikembangkan oleh tim yang terpisah secara bersamaan.</p>
+<h2 id="kelebihan-aplikasi-microservices" class="headerLink">
+    <a href="#kelebihan-aplikasi-microservices" class="header-mark"></a>Kelebihan Aplikasi Microservices</h2><ol>
+<li>Mudah untuk di pahami bagi developer karena 1 service biasanya berukuran kecil.</li>
+<li>Ketika ada service yang error maka tidak akan berimbas pada service lain.</li>
+<li>Better Deploy, karena masing - masing service bisa di deploy secara independent.</li>
+<li>Better Testability, karena service berukuran kecil maka mudah untuk di test.</li>
+<li>Ringan untuk IDE.</li>
+<li>Mudah untuk mengadopsi teknologi baru.</li>
+<li>Mudah untuk scaling secara independent untuk masing - masing service.</li>
+</ol>
+<h2 id="kekurangan-aplikasi-microservices" class="headerLink">
+    <a href="#kekurangan-aplikasi-microservices" class="header-mark"></a>Kekurangan Aplikasi Microservices</h2><ol>
+<li>Testing yang melibatkan interaksi antar service menjadi susah.</li>
+<li>Tidak mudah mengimplementasikan sebuah fitur / request, yang melibatkan service lain, karena harus di diskusikan secara hati - hati bersama tim.</li>
+<li>Tidak mudah untuk menghandle jumlah service yang banyak.</li>
+</ol>
+<h2 id="monolithic-vs-microservices" class="headerLink">
+    <a href="#monolithic-vs-microservices" class="header-mark"></a>Monolithic VS Microservices</h2><pre class="mermaid">flowchart LR;
+    subgraph Perbandingan
+      subgraph Monolithic
+        A>Catalog]
+        B[/Order/]
+        C{{Payment}}
+      end
+      title[dengan]
+      subgraph Microservices
+        D>Catalog]
+        E[/Order/]
+        F{{Payment}}
+      end
+    end
+    style Perbandingan fill:#fff,color:black
+    style Microservices fill:#fff,color:#000
+    style Monolithic fill:#fff,color:#000,stroke:black
+    style title fill:#fff,color:#000,stroke:none
+    style A fill:#88bd71,color:white
+    style D fill:#88bd71,color:white
+    style B fill:#f09834,color:white
+    style E fill:#f09834,color:white
+    style C fill:#c60000,color:white
+    style F fill:#c60000,color:white
+    
+
+</pre>
+<h2 id="perbandingan" class="headerLink">
+    <a href="#perbandingan" class="header-mark"></a>Perbandingan</h2><h3 id="monolithic" class="headerLink">
+    <a href="#monolithic" class="header-mark"></a>Monolithic</h3><ol>
+<li>Sebuah aplikasi besar yang biasanya hanya 1 codebase.</li>
+<li>Sedikit susah untuk scaling berdasarkan kebutuhan.</li>
+<li>Umumnya hanya mempunyai 1 database.</li>
+<li>Susah untuk mengganti teknologi yang telah di pakai.</li>
+<li>Deploy berarti merilis keseluruhan source code.</li>
+</ol>
+<h3 id="microservices" class="headerLink">
+    <a href="#microservices" class="header-mark"></a>Microservices</h3><ol>
+<li>Dibangun dari service - service kecil yang di buat berdasarkan domain bisnis.</li>
+<li>Mudah untuk scaling berdasarkan kebutuhan.</li>
+<li>Masing - masing service mempunyai database tersendiri.</li>
+<li>Mudah untuk mengadopsi teknologi baru.</li>
+<li>Deploy hanya pada service - service yang di ubah saja.</li>
+</ol>
+<h2 id="kesimpulan" class="headerLink">
+    <a href="#kesimpulan" class="header-mark"></a>Kesimpulan</h2><p>Monolithic Arsitektur cocok untuk aplikasi sederhana dengan pengembangan yang mudah, namun kurang fleksibel dalam skalabilitas dan adopsi teknologi baru. Sementara itu, Microservices lebih baik untuk aplikasi kompleks yang membutuhkan skalabilitas tinggi, meskipun memerlukan manajemen yang kompleks. Pemilihan antara keduanya harus didasarkan pada kebutuhan aplikasi dan tim pengembang.</p></div>
+
+        <div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2024-03-08</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share"></div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/microservices/">Microservices</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"></div>
+</div>
+</article></div>
+        </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">
+                    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer" title="Hugo 0.111.3">Hugo</a>&nbsp;|&nbsp;Theme - <a href="https://github.com/HEIGE-PCloud/DoIt" target="_blank" rel="noopener noreferrer" title="DoIt 0.4.0"><i class="far fa-edit fa-fw"></i> DoIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank" rel="noopener noreferrer">afrandormd</a></span></div>
+            <div class="footer-line"></div>
+            <div class="footer-line">
+            </div>
+        </div></footer></div>
+
+    <div id="fixed-buttons"><a href="#back-to-top" id="back-to-top-button" class="fixed-button" title="Back to Top">
+            <i class="fas fa-arrow-up fa-fw"></i>
+        </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+            <i class="fas fa-comment fa-fw"></i>
+        </a>
+    </div><script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true, theme: (window.theme === 'dark' ? 'dark' : 'default') });
+</script><div class="assets"><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"data":{"desktop-header-typeit":"Afrando","mobile-header-typeit":"Afrando"},"search":{"distance":100,"findAllMatches":false,"fuseIndexURL":"/index.json","highlightTag":"em","ignoreFieldNorm":false,"ignoreLocation":false,"isCaseSensitive":false,"location":0,"maxResultLength":10,"minMatchCharLength":2,"noResultsFound":"No results found","snippetLength":30,"threshold":0.3,"type":"fuse","useExtendedSearch":false},"typeit":{"cursorChar":null,"cursorSpeed":null,"data":{"desktop-header-typeit":["desktop-header-typeit"],"mobile-header-typeit":["mobile-header-typeit"]},"duration":null,"speed":null}};</script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/typeit/typeit.min.js"></script><script type="text/javascript" src="/js/theme.min.js" defer></script></div>
+</body>
+
+</html>

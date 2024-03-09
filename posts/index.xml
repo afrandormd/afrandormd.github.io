@@ -1,11 +1,9 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>afrandormd</title>
-        <link>https://afrandormd.github.io/</link>
-        <description>afrandormd</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 08 Mar 2024 03:39:32 &#43;0700</lastBuildDate>
-            <atom:link href="https://afrandormd.github.io/index.xml" rel="self" type="application/rss+xml" />
-        <item>
+        <title>All Posts - afrandormd</title>
+        <link>https://afrandormd.github.io/posts/</link>
+        <description>All Posts | afrandormd</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 08 Mar 2024 03:39:32 &#43;0700</lastBuildDate><atom:link href="https://afrandormd.github.io/posts/" rel="self" type="application/rss+xml" /><item>
     <title>Memahami Arsitektur Monolithic &amp; Microservices: Perbandingan, Kelebihan dan kekurangannya</title>
     <link>https://afrandormd.github.io/posts/microservices-vs-monolithic/</link>
     <pubDate>Fri, 08 Mar 2024 03:39:32 &#43;0700</pubDate><author>

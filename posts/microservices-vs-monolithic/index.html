@@ -21,7 +21,7 @@
 
 <meta name="theme-color" content="#f8f8f8"><meta name="twitter:creator" content="@map[id:afrandormd prefix:https://twitter.com/ title:Twitter weight:2]" /><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="canonical" href="https://afrandormd.github.io/posts/microservices-vs-monolithic/" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="canonical" href="https://afrandormd.github.io/posts/microservices-vs-monolithic/" /><link rel="next" href="https://afrandormd.github.io/posts/belajar-visualisasi-data/" />
 <link rel="stylesheet" href="/css/main.css"><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/color.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/fontawesome-free/all.min.css">
         <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/animate/animate.min.css">
         <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
@@ -113,7 +113,7 @@
     <div id="search-dropdown-mobile"></div>
 </div>
 <main class="main">
-            <div class="container"><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Memahami Arsitektur Monolithic &amp; Microservices: Perbandingan, Kelebihan dan kekurangannya</h1><div class="post-meta">
+            <div class="container"><script>document.getElementsByTagName("main")[0].setAttribute("autoTOC", "true")</script><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Memahami Arsitektur Monolithic &amp; Microservices: Perbandingan, Kelebihan dan kekurangannya</h1><div class="post-meta">
             <div class="post-meta-line">
                 <span class="post-author"><span class='author'><span class="author fas fa-user-circle fa-fw"></span><span class='screen-reader-text'>  </span><a href='https://afrandormd.github.io/authors/afrando'>Afrando</a></span>
                 </span></div>
@@ -123,7 +123,33 @@
         loading="eager"
         src="/img/posts/microservices/arsitektur-micro-mono.png"
         srcset="/img/posts/microservices/arsitektur-micro-mono.png, /img/posts/microservices/arsitektur-micro-mono.png 1.5x, /img/posts/microservices/arsitektur-micro-mono.png 2x"
-        title="Memahami dua arsitektur pemrograman yang sering digunakan serta mengenal kelebihan dan kekurangan dari masing masing arsitektur." ></div><div class="content" id="content"><p>Dalam dunia pengembangan perangkat lunak, pemilihan arsitektur aplikasi menjadi langkah krusial yang akan memengaruhi kinerja, skalabilitas, dan fleksibilitas sebuah sistem. Dua pendekatan utama yang sering dibahas adalah Monolithic dan Microservices. Dalam artikel ini, kita akan memperbandingkan kedua arsitektur ini, melihat kelebihan, kekurangan, serta situasi yang tepat untuk menerapkan masing-masing.</p>
+        title="Memahami dua arsitektur pemrograman yang sering digunakan serta mengenal kelebihan dan kekurangan dari masing masing arsitektur." ></div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#contoh-diagram-aplikasi-monolithic">Contoh Diagram Aplikasi Monolithic</a></li>
+    <li><a href="#kelebihan-aplikasi-monolithic">Kelebihan Aplikasi Monolithic</a></li>
+    <li><a href="#kekurangan-aplikasi-monolithic">Kekurangan Aplikasi Monolithic</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#contoh-diagram-aplikasi-microservices">Contoh Diagram Aplikasi Microservices</a></li>
+    <li><a href="#kelebihan-aplikasi-microservices">Kelebihan Aplikasi Microservices</a></li>
+    <li><a href="#kekurangan-aplikasi-microservices">Kekurangan Aplikasi Microservices</a></li>
+    <li><a href="#monolithic-vs-microservices">Monolithic VS Microservices</a></li>
+    <li><a href="#perbandingan">Perbandingan</a>
+      <ul>
+        <li><a href="#monolithic">Monolithic</a></li>
+        <li><a href="#microservices">Microservices</a></li>
+      </ul>
+    </li>
+    <li><a href="#kesimpulan">Kesimpulan</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>Dalam dunia pengembangan perangkat lunak, pemilihan arsitektur aplikasi menjadi langkah krusial yang akan memengaruhi kinerja, skalabilitas, dan fleksibilitas sebuah sistem. Dua pendekatan utama yang sering dibahas adalah Monolithic dan Microservices. Dalam artikel ini, kita akan memperbandingkan kedua arsitektur ini, melihat kelebihan, kekurangan, serta situasi yang tepat untuk menerapkan masing-masing.</p>
 <h1 id="pengenalan-monolithic-arsitektur" class="headerLink">
     <a href="#pengenalan-monolithic-arsitektur" class="header-mark"></a>Pengenalan Monolithic Arsitektur</h1><p><strong>Monolithic Arsitektur</strong> ialah cara membuat atau membangun aplikasi yang dimana komponen / modul yang berbeda digabungkan menjadi satu program atau 1 codebase.</p>
 <h2 id="contoh-diagram-aplikasi-monolithic" class="headerLink">
@@ -278,7 +304,8 @@ Dalam arsitektur microservices pada diagram di atas, setiap layanan (Catalog, Or
         </section>
     </div>
 
-    <div class="post-nav"></div>
+    <div class="post-nav">
+            <a href="/posts/belajar-visualisasi-data/" class="next" rel="next" title="Belajar Visualisasi Data">Belajar Visualisasi Data<i class="fas fa-angle-right fa-fw"></i></a></div>
 </div>
 </article></div>
         </main><footer class="footer">

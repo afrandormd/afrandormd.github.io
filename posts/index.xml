@@ -3,7 +3,15 @@
         <title>All Posts - afrandormd</title>
         <link>https://afrandormd.github.io/posts/</link>
         <description>All Posts | afrandormd</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 08 Mar 2024 03:39:32 &#43;0700</lastBuildDate><atom:link href="https://afrandormd.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 09 Mar 2024 15:41:10 &#43;0700</lastBuildDate><atom:link href="https://afrandormd.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Belajar Visualisasi Data</title>
+    <link>https://afrandormd.github.io/posts/belajar-visualisasi-data/</link>
+    <pubDate>Sat, 09 Mar 2024 15:41:10 &#43;0700</pubDate><author>
+                        <name>Afrando</name><uri>https://alice.example.com</uri><email>afrandoshareinramadhan@gmail.com</email></author><guid>https://afrandormd.github.io/posts/belajar-visualisasi-data/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/img/posts/visualisasi-data/visualisasi-data.png" referrerpolicy="no-referrer">
+            </div><p>Dalam era informasi yang kaya akan data, kemampuan untuk memahami dan menginterpretasikan informasi menjadi kunci dalam pengambilan keputusan yang efektif.</p>]]></description>
+</item><item>
     <title>Memahami Arsitektur Monolithic &amp; Microservices: Perbandingan, Kelebihan dan kekurangannya</title>
     <link>https://afrandormd.github.io/posts/microservices-vs-monolithic/</link>
     <pubDate>Fri, 08 Mar 2024 03:39:32 &#43;0700</pubDate><author>

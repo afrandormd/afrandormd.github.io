@@ -1,0 +1,402 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noodp" />
+    <title>Belajar Visualisasi Data - afrandormd</title><meta name="Description" content="Pada artikel kali ini kita akan mengenal beberapa bentuk dari visualisasi data."><meta property="og:title" content="Belajar Visualisasi Data" />
+<meta property="og:description" content="Pada artikel kali ini kita akan mengenal beberapa bentuk dari visualisasi data." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://afrandormd.github.io/posts/belajar-visualisasi-data/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-03-09T15:41:10+07:00" />
+<meta property="article:modified_time" content="2024-03-09T15:41:10+07:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Belajar Visualisasi Data"/>
+<meta name="twitter:description" content="Pada artikel kali ini kita akan mengenal beberapa bentuk dari visualisasi data."/>
+<meta name="application-name" content="afrandormd">
+<meta name="apple-mobile-web-app-title" content="afrandormd">
+
+<meta name="theme-color" content="#f8f8f8"><meta name="twitter:creator" content="@map[id:afrandormd prefix:https://twitter.com/ title:Twitter weight:2]" /><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="canonical" href="https://afrandormd.github.io/posts/belajar-visualisasi-data/" /><link rel="prev" href="https://afrandormd.github.io/posts/microservices-vs-monolithic/" />
+<link rel="stylesheet" href="/css/main.css"><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/color.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/fontawesome-free/all.min.css">
+        <noscript><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/lib/animate/animate.min.css">
+        <noscript><link rel="stylesheet" href="/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Belajar Visualisasi Data",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://afrandormd.github.io/posts/belajar-visualisasi-data/"
+        },"genre": "posts","keywords": "Machine Learning","wordcount":  1198 ,
+        "url": "https://afrandormd.github.io/posts/belajar-visualisasi-data/","datePublished": "2024-03-09T15:41:10+07:00","dateModified": "2024-03-09T15:41:10+07:00","publisher": {
+            "@type": "Organization",
+            "name": "afrandormd"},"authors": [{
+                        "@type": "Person",
+                        "name": "Afrando"                    
+                    }],"description": "Pada artikel kali ini kita akan mengenal beberapa bentuk dari visualisasi data."
+    }
+    </script></head>
+
+<body header-desktop="" header-mobile=""><script type="text/javascript">
+        function setTheme(theme) {document.body.setAttribute('theme', theme); document.documentElement.style.setProperty('color-scheme', theme === 'light' ? 'light' : 'dark'); window.theme = theme;   window.isDark = window.theme !== 'light' }
+        function saveTheme(theme) {window.localStorage && localStorage.setItem('theme', theme);}
+        function getMeta(metaName) {const metas = document.getElementsByTagName('meta'); for (let i = 0; i < metas.length; i++) if (metas[i].getAttribute('name') === metaName) return metas[i]; return '';}
+        if (window.localStorage && localStorage.getItem('theme')) {let theme = localStorage.getItem('theme');theme === 'light' || theme === 'dark' || theme === 'black' ? setTheme(theme) : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light')); } else { if ('' === 'light' || '' === 'dark' || '' === 'black') setTheme(''), saveTheme(''); else saveTheme('auto'), window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light');}
+        let metaColors = {'light': '#f8f8f8','dark': '#252627','black': '#000000'}
+        getMeta('theme-color').content = metaColors[document.body.getAttribute('theme')];
+        window.switchThemeEventSet = new Set()
+    </script>
+    <div id="back-to-top"></div>
+    <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="afrandormd"><span class="header-title-pre"><i class='fas fa-laptop-code'></i></span><span id="desktop-header-typeit" class="typeit"></span></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts <i class='fas fa-edit'></i></a><a class="menu-item" href="/tags/"> Tags <i class='fas fa-tags'></i></a><a class="menu-item" href="/projects/"> Projects <i class='fas fa-code'></i></a><a class="menu-item" href="/certificate/"> Certificate <i class='fas fa-ribbon'></i></a><a class="menu-item" href="/about/"> About <i class='fas fa-user'></i></a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="afrandormd"><span class="header-title-pre"><i class='fas fa-laptop-code'></i></span><span id="mobile-header-typeit" class="typeit"></span></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">Posts<i class='fas fa-edit'></i></a><a class="menu-item" href="/tags/" title="">Tags<i class='fas fa-tags'></i></a><a class="menu-item" href="/projects/" title="">Projects<i class='fas fa-code'></i></a><a class="menu-item" href="/certificate/" title="">Certificate<i class='fas fa-ribbon'></i></a><a class="menu-item" href="/about/" title="">About<i class='fas fa-user'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+            <div class="container"><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Belajar Visualisasi Data</h1><div class="post-meta">
+            <div class="post-meta-line">
+                <span class="post-author"><span class='author'><span class="author fas fa-user-circle fa-fw"></span><span class='screen-reader-text'>  </span><a href='https://afrandormd.github.io/authors/afrando'>Afrando</a></span>
+                </span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2024-03-09">2024-03-09</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2024-03-09">2024-03-09</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;1198 words&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;6 minutes&nbsp;</div>
+        </div><div class="featured-image"><img
+        
+        loading="eager"
+        src="/img/posts/visualisasi-data/visualisasi-data.png"
+        srcset="/img/posts/visualisasi-data/visualisasi-data.png, /img/posts/visualisasi-data/visualisasi-data.png 1.5x, /img/posts/visualisasi-data/visualisasi-data.png 2x"
+        title="Pada artikel kali ini kita akan mengenal beberapa bentuk dari visualisasi data." ></div><div class="content" id="content"><p>Dalam era informasi yang kaya akan data, kemampuan untuk memahami dan menginterpretasikan informasi menjadi kunci dalam pengambilan keputusan yang efektif.</p>
+<p>Di sinilah pentingnya visualisasi data menjadi semakin terasa. Visualisasi data bukan hanya tentang grafik dan diagram yang menarik, tetapi juga tentang kemampuan untuk merangkum kompleksitas informasi menjadi gambaran yang jelas dan mudah dipahami.</p>
+<h1 id="media-visualisasi-data" class="headerLink">
+    <a href="#media-visualisasi-data" class="header-mark"></a>Media Visualisasi Data</h1><p>Tahukah kalian macam - macam bentuk media yang digunakan dalam visualisasi data? berikut ini penjelasannya:</p>
+<h2 id="tabel" class="headerLink">
+    <a href="#tabel" class="header-mark"></a>Tabel</h2><p>Pastinya kalian pernah menyusun data ke dalam sebuah baris dan kolom, maka selamat, kalian telah berhasil membuat sebuah tabel.<br>
+Jadi, tabel merupakan salah satu bentuk dari media visualisasi data yang sederhana dan sering kita temukan. Data yang ada di dalam tabel biasanya dikategorikan dalam <strong>baris</strong> atau <strong>kolom</strong> tertentu yang kemudian dapat di urutkan dengan mudah, contohnya di urutkan secara menaik (<em>Ascending</em>) atau menurun (<em>Descending</em>). Hal tersebut memudahkan kita untuk menyusun data sesuai dengan perintah yang diinginkan. Contoh studi kasusnya, bayangkan kalian memiliki data sayur - sayuran seperti, sawi (50 ikat), kangkung (35 ikat), bayam (25 ikat), selada (10 ikat). Bagaimana kalian mencatatnya supaya lebih mudah dibaca? salah satu caranya adalah bisa dengan membuat tabel seperti berikut:</p>
+<table>
+<thead>
+<tr>
+<th>Nama Sayur</th>
+<th>Jumlah</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sawi</td>
+<td>50</td>
+</tr>
+<tr>
+<td>Kangkung</td>
+<td>35</td>
+</tr>
+<tr>
+<td>Bayam</td>
+<td>25</td>
+</tr>
+<tr>
+<td>Selada</td>
+<td>10</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td>120</td>
+</tr>
+</tbody>
+</table>
+<p>Setelah diurutkan secara <em>ascending</em> berdasarkan nama sayur sebagai berikut:</p>
+<table>
+<thead>
+<tr>
+<th>Nama Sayur</th>
+<th>Jumlah</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bayam</td>
+<td>25</td>
+</tr>
+<tr>
+<td>Kangkung</td>
+<td>35</td>
+</tr>
+<tr>
+<td>Sawi</td>
+<td>50</td>
+</tr>
+<tr>
+<td>Selada</td>
+<td>10</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td>120</td>
+</tr>
+</tbody>
+</table>
+<p>Dari tabel di atas, kita dapat membaca data sayur - sayuran dengan lebih efektif dan mengetahui jumlah total sayur. Dari data tersebut kita juga dapat mengurutkan dari jumlah sayur yang paling banyak, paling sedikit, atau mengurutkan nama sayur berdasarkan abjad.<br>
+Terdapat beberapa aturan dasar dalam penulisan tabel yaitu sebagai berikut:</p>
+<ul>
+<li>
+<p><strong>Penulisan Judul</strong><br>
+Dalam menulis judul pastikan sudah mencakup isi dari tabel yang di buat. Usahakan menggunakan font yang jelas dan mudah dibaca. Sehingga, pembaca akan dapat dengan mudah memahami tabel apa yang tersaji.</p>
+</li>
+<li>
+<p><strong>Simpel</strong><br>
+<em>Simplicity is a must</em> (Kesederhanaan adalah suatu keharusan). Jangan terlalu berlebihan dalam mendesain sebuah tabel. Akibatnya pembaca tidak fokus pada data yang disajikan. Penulisan variabel di dalamnya juga singkat saja.</p>
+</li>
+<li>
+<p><strong>Penjelasan Simbol</strong><br>
+Apabila dalam tabel terdapat simbol atau istilah tertentu, pastikan untuk dapat menjelaskannya pada catatan kaki tabel tersebut.</p>
+</li>
+<li>
+<p><strong>Penekanan</strong><br>
+Penekanan yang dimaksud adalah cara kita memfokuskan perhatian pembaca pada pokok data. Misal, dalam penulisan tabel di atas, nama sayur menggunakan warna background biru gelap supaya pembaca bisa dengan mudah membedakan nama sayur dan jumlah sayur. Jika suatu data ada dalam kategori yang sama dan dapat dijumlahkan, maka kalian dapat menyertakan total di akhir datanya seperti pada contoh tabel di atas.</p>
+</li>
+<li>
+<p><strong>Sumber Tabel</strong><br>
+Apabila tabel yang di sajikan bukan milik kalian, maka sertakan sumber di catatan kaki tabel tersebut.</p>
+</li>
+</ul>
+<h2 id="diagram" class="headerLink">
+    <a href="#diagram" class="header-mark"></a>Diagram</h2><p>Saya rasa kita semua sudah tidak asing dengan kata Diagram. Sebenarnya apa itu diagram?<br>
+<strong>Diagram</strong> merupakan sebuah representasi data yang digambarkan dalam bentuk grafik. Jika kalian memiliki sebuah data yang ingin diproyeksikan dalam bentuk diagram, berikut beberapa tipe diagram yang bisa kalian coba gunakan.</p>
+<h3 id="diagram-batang" class="headerLink">
+    <a href="#diagram-batang" class="header-mark"></a>Diagram Batang</h3><p>Apakah kalian pernah membuat diagram batang?<br>
+Jadi, Diagram batang merupakan salah satu jenis grafik yang hampir sering kita jumpai dalam visualisasi data. Mengapa demikian, karena diagram ini dapat menunjukkan perbandingan angka pada kategori tertentu. Jumlah elemen batang dari diagram ini sebaiknya tidak terlalu banyak supaya label dari data tersebut masih bisa terbaca atau tidak terpotong.<br>
+Pada diagram batang terdapat dua sumbu, <em>sumbu X</em> pada diagram batang menunjukkan kategori data sedangkan <em>sumbu Y</em> menunjukkan skala nilai dari data dalam satuan ukuran tertentu. Pastikan pada sumbu Y nilai awalnya adalah 0 supaya diagram kalian terlihat akurat dan mengurangi kesalahpahaman dalam mengartikan data.</p>
+<p>Selain itu, perhatikan pula penulisan label diagram. Hindari penulisan label secara vertikal maupun diagonal supaya tidak menyulitkan pembaca. Unsur warna juga penting dalam penyajian data diagram. Usahakan menggunakan warna yang konsisten supaya mudah dipahami. Berikut contoh dari diagram batang <strong>Perbandingan Pengeluaran Bulanan</strong>:</p>
+<div class="echarts" id="id-1" style="width: 100%; height: 30rem;"></div>
+<h3 id="diagram-garis" class="headerLink">
+    <a href="#diagram-garis" class="header-mark"></a>Diagram Garis</h3><p>Diagram garis biasanya menyajikan perubahan data dalam periode waktu tertentu. Secara umum, <strong>diagram garis</strong> digunakan untuk melihat perkembangan data tertentu yang berlangsung secara terus menerus atau berkelanjutan. Contoh dari data yang bisa digambarkan dalam diagram garis seperti, perkembangan jumlah penduduk selama 10 tahun terakhir. Dalam proses penggambaran diagram garis diperlukan <em>sumbu mendatar</em> atau <strong>X</strong> dan <em>sumbu tegak</em> atau <strong>Y</strong>.<br>
+Sumbu X berfungsi untuk menunjukkan <strong>interval waktu</strong> sedangkan sumbu Y menunjukkan <strong>kuantitas</strong> atau nilai dari data tersebut seperti total penjualan, biaya yang dikeluarkan, jumlah pendapatan, dan lain sebagainya.<br>
+Kemudian, buat tanda titik koordinat yang menunjukkan nilai data berdasarkan waktunya. Setelah semua data ditandai dengan titik koordinat, maka selanjutnya buatlah garis yang menghubungkan titik - titik tersebut. Dari penarikan garis tersebut kita bisa melihat pola perkembangan datanya cenderung naik, stabil, atau turun.<br>
+<strong>Contoh Studi Kasus</strong><br>
+Ada sebuah toko buku dan ingin melihat perkembangan penjualan tahun 2023 yang lalu. Terdapat tabel seperti berikut:</p>
+<table>
+<thead>
+<tr>
+<th>Bulan</th>
+<th>Jumlah</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Januari</td>
+<td>150</td>
+</tr>
+<tr>
+<td>Februari</td>
+<td>130</td>
+</tr>
+<tr>
+<td>Maret</td>
+<td>180</td>
+</tr>
+<tr>
+<td>April</td>
+<td>190</td>
+</tr>
+<tr>
+<td>Mei</td>
+<td>250</td>
+</tr>
+<tr>
+<td>Juni</td>
+<td>200</td>
+</tr>
+<tr>
+<td>Juli</td>
+<td>230</td>
+</tr>
+<tr>
+<td>Agustus</td>
+<td>250</td>
+</tr>
+<tr>
+<td>September</td>
+<td>280</td>
+</tr>
+<tr>
+<td>Oktober</td>
+<td>290</td>
+</tr>
+<tr>
+<td>November</td>
+<td>300</td>
+</tr>
+<tr>
+<td>Desember</td>
+<td>350</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td>2800</td>
+</tr>
+</tbody>
+</table>
+<p>Untuk mempermudah melihat perkembangan data, maka kita dapat membuat data dalam tabel tersebut menjadi sebuah diagram garis berikut ini:<br>
+<strong>Diagram Garis Penjualan Buku Tahun 2023</strong>
+<div class="echarts" id="id-2" style="width: 100%; height: 30rem;"></div></p>
+<p>Dari data tersebut, kita dapat melihat tren penjualan buku pada toko yang cenderung naik pada tahun 2023. Walaupun pada bulan Januari sampai Juni sedikit tidak stabil karena terjadi kenaikan dan penurunan, namun pada bulan Juni sampai Desember penjualan cenderung naik. Nah, dengan menggunakan diagram garis data tersebut lebih mudah dibaca, bukan?</p>
+<h3 id="diagram-lingkaran" class="headerLink">
+    <a href="#diagram-lingkaran" class="header-mark"></a>Diagram Lingkaran</h3><p>Apakah kalian pernah membuat diagram lingkaran sebelumnya?<br>
+Diagram lingkaran mirip seperti sebuah makanan <strong>pizza</strong> yang diiris dengan porsi tertentu. pada konteks data, irisan pizza tersebut menggambarkan persentase data nilai atau kuantitas. Apabila irisan tersebut dijumlahkan nilainya, maka seharusnya akan menghasilkan <strong>100 persen</strong> atau <strong>360 derajat.</strong><br>
+Diagram lingkaran biasanya sering digunakan oleh perusahaan atau dunia pendidikan untuk merepresentasikan data. Diagram lingkaran tidak hanya menunjukkan jumlah relatif dari kuantitas suatu data satu sama lain, namun dapat menunjukkan keseluruhan data dan kuantitas sebuah kategori data itu sendiri relatif <strong>vis a vis</strong> atau berhubungan dengan keseluruhan data yang ada.<br>
+Untuk memperjelas pemahaman tentang diagram lingkaran, berikut terdapat contoh survei terhadap mahasiswa yang memiliki hobi sepak bola, basket, dan bulu tangkis untuk pelatihan menghadapi lomba tingkat nasional.</p>
+<table>
+<thead>
+<tr>
+<th>Hobi</th>
+<th>Jumlah</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sepak Bola</td>
+<td>17</td>
+</tr>
+<tr>
+<td>Basket</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Bulu Tangkis</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Lainnya</td>
+<td>10</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td>35</td>
+</tr>
+</tbody>
+</table>
+<p>Apabila data tabel di atas digambarkan dengan diagram lingkaran, berikut hasilnya:</p>
+<div class="echarts" id="id-3" style="width: 100%; height: 30rem;"></div>
+<p>Dari 35 siswa dalam satu kelas, sepak bola paling digemari dibandingkan dengan hobi lainnya. Basket dan bulu tangkis masing - masing sebanyak 8,57% dan 14,29%. Sedangkan 28,57% atau sama dengan 10 orang siswa lainnya memiliki hobi lainnya seperti bermain musik, jalan - jalan, dan membaca novel.<br>
+Terdapat rumus untuk menjadikan jumlah data ke dalam bentuk persen, berikut ini perhitungan rumus diagram lingkaran dalam bentuk persen dan derajat.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Dalam bentuk Persen</strong>  (jumlah data dalam kategori tertentu / Total data keseluruhan) X 100</th>
+</tr>
+</thead>
+</table>
+<table>
+<thead>
+<tr>
+<th><strong>Dalam bentuk Derajat</strong>  (jumlah data dalam kategori tertentu / Total data keseluruhan) X 360</th>
+</tr>
+</thead>
+</table>
+<p>Terdapat beberapa aturan dasar yang perlu diperhatikan dalam pembuatan diagram lingkaran, diantaranya:</p>
+<ul>
+<li>Pastikan terdapat judul pada diagram lingkaran.</li>
+<li>Jika membuat diagram dalam satuan persen maka pastikan jumlah total datanya adalah 100%, sedangkan untuk satuan derajat totalnya adalah 360 derajat.</li>
+<li>Penulisan label juga penting untuk penanda dari suatu data, bisa menunjukkan kategori data, nilai, ataupun keduanya.</li>
+<li>Buat warna masing - masing irisan berbeda untuk membedakan datanya.</li>
+<li>Usahakan data yang di gambarkan dalam diagram maksimal 5 irisan supaya tidak menyulitkan pembaca.</li>
+</ul></div>
+
+        <div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2024-03-09</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share"></div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/machine-learning/">Machine Learning</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/microservices-vs-monolithic/" class="prev" rel="prev" title="Memahami Arsitektur Monolithic &amp; Microservices: Perbandingan, Kelebihan dan kekurangannya"><i class="fas fa-angle-left fa-fw"></i>Memahami Arsitektur Monolithic &amp; Microservices: Perbandingan, Kelebihan dan kekurangannya</a></div>
+</div>
+</article></div>
+        </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">
+                    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreferrer" title="Hugo 0.111.3">Hugo</a>&nbsp;|&nbsp;Theme - <a href="https://github.com/HEIGE-PCloud/DoIt" target="_blank" rel="noopener noreferrer" title="DoIt 0.4.0"><i class="far fa-edit fa-fw"></i> DoIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank" rel="noopener noreferrer">afrandormd</a></span></div>
+            <div class="footer-line"></div>
+            <div class="footer-line">
+            </div>
+        </div></footer></div>
+
+    <div id="fixed-buttons"><a href="#back-to-top" id="back-to-top-button" class="fixed-button" title="Back to Top">
+            <i class="fas fa-arrow-up fa-fw"></i>
+        </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+            <i class="fas fa-comment fa-fw"></i>
+        </a>
+    </div><div class="assets"><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"data":{"desktop-header-typeit":"Afrando","id-1":"{\"legend\":{\"data\":[\"Minggu 1\",\"Minggu 2\",\"Minggu 3\",\"Minggu 4\"]},\"series\":[{\"color\":\"#5470c6\",\"data\":[500000,300000,550000,180000,500000,300000],\"name\":\"Minggu 1\",\"type\":\"bar\"},{\"color\":\"#91cc75\",\"data\":[260000,500000,500000,260000,760000,280000],\"name\":\"Minggu 2\",\"type\":\"bar\"},{\"color\":\"#fac858\",\"data\":[700000,260000,500000,500000,950000,950000],\"name\":\"Minggu 3\",\"type\":\"bar\"},{\"color\":\"#ee6666\",\"data\":[1000000,760000,950000,760000,1000000,760000],\"name\":\"Minggu 4\",\"type\":\"bar\"}],\"title\":{\"subtext\":\"2024\",\"text\":\"\"},\"tooltip\":{\"axisPointer\":{\"type\":\"shadow\"},\"trigger\":\"axis\"},\"xAxis\":{\"data\":[\"Januari\",\"Februari\",\"Maret\",\"April\",\"Mei\",\"Juni\"],\"type\":\"category\"},\"yAxis\":{\"type\":\"value\"}}","id-2":"{\"legend\":{\"data\":[\"Jumlah Penjualan\"]},\"series\":[{\"data\":[150,130,180,190,250,200,230,250,280,290,300,350],\"name\":\"Jumlah Penjualan\",\"smooth\":true,\"type\":\"line\"}],\"title\":{\"subtext\":\"Jumlah Penjualan per Bulan\",\"text\":\"\"},\"tooltip\":{\"trigger\":\"axis\"},\"xAxis\":{\"data\":[\"Januari\",\"Februari\",\"Maret\",\"April\",\"Mei\",\"Juni\",\"Juli\",\"Agustus\",\"September\",\"Oktober\",\"November\",\"Desember\"],\"type\":\"category\"},\"yAxis\":{\"type\":\"value\"}}","id-3":"{\"legend\":{\"data\":[\"Sepak Bola\",\"Basket\",\"Bulu Tangkis\",\"Lainnya\"],\"left\":\"left\",\"orient\":\"vertical\"},\"series\":[{\"center\":[\"50%\",\"60%\"],\"data\":[{\"name\":\"Sepak Bola\",\"value\":17},{\"name\":\"Basket\",\"value\":3},{\"name\":\"Bulu Tangkis\",\"value\":5},{\"name\":\"Lainnya\",\"value\":10}],\"emphasis\":{\"itemStyle\":{\"shadowBlur\":10,\"shadowColor\":\"rgba(0, 0, 0, 0.5)\",\"shadowOffsetX\":0}},\"name\":\"Jumlah\",\"radius\":\"55%\",\"type\":\"pie\"}],\"title\":{\"left\":\"center\",\"subtext\":\"Distribusi Jumlah Orang dengan Hobi Berbeda\",\"text\":\"Survei Hobi Siswa\"},\"tooltip\":{\"formatter\":\"{a} \\u003cbr/\\u003e{b} : {c} ({d}%)\",\"trigger\":\"item\"}}","mobile-header-typeit":"Afrando"},"echarts":true,"search":{"distance":100,"findAllMatches":false,"fuseIndexURL":"/index.json","highlightTag":"em","ignoreFieldNorm":false,"ignoreLocation":false,"isCaseSensitive":false,"location":0,"maxResultLength":10,"minMatchCharLength":2,"noResultsFound":"No results found","snippetLength":30,"threshold":0.3,"type":"fuse","useExtendedSearch":false},"typeit":{"cursorChar":null,"cursorSpeed":null,"data":{"desktop-header-typeit":["desktop-header-typeit"],"mobile-header-typeit":["mobile-header-typeit"]},"duration":null,"speed":null}};</script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/typeit/typeit.min.js"></script><script type="text/javascript" src="/lib/echarts/echarts.min.js" defer></script><script type="text/javascript" src="/lib/echarts/macarons.min.min.js" defer></script><script type="text/javascript" src="/js/echarts.min.js" defer></script><script type="text/javascript" src="/js/theme.min.js" defer></script></div>
+</body>
+
+</html>

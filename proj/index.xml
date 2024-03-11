@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projs on afrandormd</title>
+    <link>https://afrandormd.github.io/proj/</link>
+    <description>Recent content in Projs on afrandormd</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 11 Mar 2024 00:12:23 +0700</lastBuildDate><atom:link href="https://afrandormd.github.io/proj/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fitfusion</title>
+      <link>https://afrandormd.github.io/proj/fitfusion/</link>
+      <pubDate>Mon, 11 Mar 2024 00:12:23 +0700</pubDate>
+      
+      <guid>https://afrandormd.github.io/proj/fitfusion/</guid>
+      <description>FitFusion - Aplikasi Desain UI/UX untuk Aplikasi FitnessFitFusion adalah sebuah proyek desain UI/UX yang bertujuan untuk menyediakan pengalaman fitness yang menyenangkan dan mudah digunakan bagi pengguna dari berbagai tingkat kebugaran. Aplikasi ini dirancang dengan fokus pada antarmuka yang ramah pengguna, fitur-fitur inovatif untuk pelacak aktivitas, dan personalisasi yang memungkinkan pengguna untuk mencapai tujuan kebugaran mereka dengan lebih efektif.
+Tantangan: Proyek FitFusion diinisiasi untuk mengatasi masalah umum yang dihadapi oleh pengguna aplikasi fitness saat ini.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Python - Tag - afrandormd</title>
+        <link>https://afrandormd.github.io/tags/python/</link>
+        <description>Python - Tag - afrandormd</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 13 Mar 2024 23:15:08 &#43;0700</lastBuildDate><atom:link href="https://afrandormd.github.io/tags/python/" rel="self" type="application/rss+xml" /><item>
+    <title>Dasar Pemrograman Python</title>
+    <link>https://afrandormd.github.io/posts/dasar-python/</link>
+    <pubDate>Wed, 13 Mar 2024 23:15:08 &#43;0700</pubDate><author>
+                        <name>Afrando</name><uri>https://alice.example.com</uri><email>afrandoshareinramadhan@gmail.com</email></author><guid>https://afrandormd.github.io/posts/dasar-python/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/img/posts/python/dasar-python.png" referrerpolicy="no-referrer">
+            </div>Python adalah bahasa tingkat tinggi untuk backend, machine learning, AI, Dekstop, IoT, dll.]]></description>
+</item></channel>
+</rss>

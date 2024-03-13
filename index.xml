@@ -3,9 +3,17 @@
         <title>afrandormd</title>
         <link>https://afrandormd.github.io/</link>
         <description>afrandormd</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 12 Mar 2024 03:06:39 &#43;0700</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 13 Mar 2024 23:15:08 &#43;0700</lastBuildDate>
             <atom:link href="https://afrandormd.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Dasar Pemrograman Python</title>
+    <link>https://afrandormd.github.io/posts/dasar-python/</link>
+    <pubDate>Wed, 13 Mar 2024 23:15:08 &#43;0700</pubDate><author>
+                        <name>Afrando</name><uri>https://alice.example.com</uri><email>afrandoshareinramadhan@gmail.com</email></author><guid>https://afrandormd.github.io/posts/dasar-python/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/img/posts/python/dasar-python.png" referrerpolicy="no-referrer">
+            </div>Python adalah bahasa tingkat tinggi untuk backend, machine learning, AI, Dekstop, IoT, dll.]]></description>
+</item><item>
     <title>Belajar Visualisasi Data</title>
     <link>https://afrandormd.github.io/posts/belajar-visualisasi-data/</link>
     <pubDate>Sat, 09 Mar 2024 15:41:10 &#43;0700</pubDate><author>

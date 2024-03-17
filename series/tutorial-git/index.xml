@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Tutorial Git Untuk Pemula - Series - afrandormd</title>
+        <link>https://afrandormd.github.io/series/tutorial-git/</link>
+        <description>Tutorial Git Untuk Pemula - Series - afrandormd</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 17 Mar 2024 13:05:26 &#43;0700</lastBuildDate><atom:link href="https://afrandormd.github.io/series/tutorial-git/" rel="self" type="application/rss+xml" /><item>
+    <title>Belajar Git 01: Apa Itu Git dan Seberapa Penting Bagi Programmer?</title>
+    <link>https://afrandormd.github.io/posts/git/apa-itu-git/</link>
+    <pubDate>Sun, 17 Mar 2024 13:05:26 &#43;0700</pubDate><author>
+                        <name>Afrando</name><uri>https://afrandormd.github.io</uri><email>afrandoshareinramadhan@gmail.com</email></author><guid>https://afrandormd.github.io/posts/git/apa-itu-git/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/img/posts/git/tutorial-git.png" referrerpolicy="no-referrer">
+            </div>Git merupakan salah satu version control system yang dimana tools ini sangat diperlukan untuk melakukan tracking perubahan source code dan melakukan kolaborasi antar sesama programmer.]]></description>
+</item></channel>
+</rss>

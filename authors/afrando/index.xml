@@ -3,7 +3,15 @@
         <title>Afrando - Author - afrandormd</title>
         <link>https://afrandormd.github.io/authors/afrando/</link>
         <description>Afrando - Author - afrandormd</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 13 Mar 2024 23:15:08 &#43;0700</lastBuildDate><atom:link href="https://afrandormd.github.io/authors/afrando/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 17 Mar 2024 13:05:26 &#43;0700</lastBuildDate><atom:link href="https://afrandormd.github.io/authors/afrando/" rel="self" type="application/rss+xml" /><item>
+    <title>Belajar Git 01: Apa Itu Git dan Seberapa Penting Bagi Programmer?</title>
+    <link>https://afrandormd.github.io/posts/git/apa-itu-git/</link>
+    <pubDate>Sun, 17 Mar 2024 13:05:26 &#43;0700</pubDate><author>
+                        <name>Afrando</name><uri>https://afrandormd.github.io</uri><email>afrandoshareinramadhan@gmail.com</email></author><guid>https://afrandormd.github.io/posts/git/apa-itu-git/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/img/posts/git/tutorial-git.png" referrerpolicy="no-referrer">
+            </div>Git merupakan salah satu version control system yang dimana tools ini sangat diperlukan untuk melakukan tracking perubahan source code dan melakukan kolaborasi antar sesama programmer.]]></description>
+</item><item>
     <title>Belajar Python 01: Mengenal Bahasa Pemrograman Python</title>
     <link>https://afrandormd.github.io/posts/python/mengenal-bahasa-python/</link>
     <pubDate>Wed, 13 Mar 2024 23:15:08 &#43;0700</pubDate><author>

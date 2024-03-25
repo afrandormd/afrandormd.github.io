@@ -35,7 +35,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https://afrandormd.github.io/posts/git/installasi-git/"
-        },"genre": "posts","keywords": "Git","wordcount":  19 ,
+        },"genre": "posts","keywords": "Git","wordcount":  267 ,
         "url": "https://afrandormd.github.io/posts/git/installasi-git/","datePublished": "2024-03-23T22:12:28+07:00","dateModified": "2024-03-23T22:12:28+07:00","publisher": {
             "@type": "Organization",
             "name": "Afrando Sharein Ramadhan"},"authors": [{
@@ -119,13 +119,90 @@
             <div class="post-meta-line">
                 <span class="post-author"><span class='author'><span class="author fas fa-user-circle fa-fw"></span><span class='screen-reader-text'>  </span><a href='https://afrandormd.github.io/authors/afrando'>Afrando</a></span>
                 </span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-series">series <a href="/series/tutorial-git/"><i class="far fa-list-alt fa-fw"></i>Tutorial Git Untuk Pemula</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2024-03-23">2024-03-23</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2024-03-23">2024-03-23</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;19 words&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;One minute&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2024-03-23">2024-03-23</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2024-03-23">2024-03-23</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;267 words&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;</div>
         </div><div class="featured-image"><img
         
         loading="eager"
         src="/img/posts/git/tutorial-git.png"
         srcset="/img/posts/git/tutorial-git.png, /img/posts/git/tutorial-git.png 1.5x, /img/posts/git/tutorial-git.png 2x"
-        title="Pada tutorial kali ini kita akan belajar memulai praktik installasi dan konfigurasi Git" ></div><div class="content" id="content"><p>Sebelumnya, kita telah mengenal Git pada tulisan sebelumnya. Selanjutnya kita akan mencoba menginstall git dan melakukan konfigurasi awal git.</p></div>
+        title="Pada tutorial kali ini kita akan belajar memulai praktik installasi dan konfigurasi Git" ></div><div class="content" id="content"><p>Sebelumnya, kita telah mengenal Git pada <a href="../apa-itu-git/" rel="">tulisan sebelumnya</a>. Selanjutnya kita akan mencoba menginstall git dan melakukan konfigurasi awal git.</p>
+<h2 id="cara-install-git-di-linux" class="headerLink">
+    <a href="#cara-install-git-di-linux" class="header-mark"></a>Cara Install Git di Linux</h2><p>Untuk melakukan installasi Git di sistem operasi linux kita dapat menggunakan perintah <code>apt</code>.</p>
+<pre tabindex="0"><code> sudo apt install git
+</code></pre><p>atau</p>
+<pre tabindex="0"><code> sudo apt-get install git
+</code></pre><p>Setelah itu, kita bisa memeriksa apakah Git sudah terinstall di sistem operasi kita dengan perintah:</p>
+<pre tabindex="0"><code> git --version 
+</code></pre><p>Jika program Git sudah terinstall, maka secara otomatis akan menampilkan versi dari Git tersebut.<br>
+berikut versi dari git yang telah terinstall di sistem operasi Ubuntu milik saya:</p>
+<a class="lightgallery" href="/img/posts/git/git-version-ubuntu.png" title="/img/posts/git/git-version-ubuntu.png" data-thumbnail="/img/posts/git/git-version-ubuntu.png">
+        <img
+            
+            loading="lazy"
+            src="/img/posts/git/git-version-ubuntu.png"
+            srcset="/img/posts/git/git-version-ubuntu.png, /img/posts/git/git-version-ubuntu.png 1.5x, /img/posts/git/git-version-ubuntu.png 2x"
+            alt="/img/posts/git/git-version-ubuntu.png" width="70%" >
+    </a>
+<h2 id="cara-install-git-di-windows" class="headerLink">
+    <a href="#cara-install-git-di-windows" class="header-mark"></a>Cara Install Git di Windows</h2><p>Untuk tata cara instalasi Git di windows caranya memang berbeda seperti di Linux yang ketik perintah langsung terinstal.<br>
+Kita harus men-download terlebih dahulu program Git-nya. Kemudian melakukan ritual <em>next &gt; next &gt; finish.</em>  Tapi dalam ritual tersebut, terdapat pilihan yang harus di atur agar perintah <code>git</code> dapat dikenali di CMD.</p>
+<h5 id="download-git" class="headerLink">
+    <a href="#download-git" class="header-mark"></a><strong>Download Git</strong></h5><p>Untuk men-download program Git, kalian bisa buka website resmi Git <a href="https://git-scm.com/" target="_blank" rel="noopener noreferrer">( git-scm.com )</a>. Kemudian download Git sesuai dengan arsitektur komputer kalian, semisal jika menggunakan <strong>64bit</strong>, maka download yang 64bit. Begitu juga kalau menggunakan <strong>32bit</strong>.</p>
+<h5 id="langkah---langkah-install-git-di-windows" class="headerLink">
+    <a href="#langkah---langkah-install-git-di-windows" class="header-mark"></a><strong>Langkah - langkah install Git di Windows</strong></h5><p>Langsung saja kita mulai praktik instalasi Gitnya. Silakan klik 2x file installer Git yang telah di download.</p>
+<p><a class="lightgallery" href="/img/posts/git/program-git.png" title="/img/posts/git/program-git.png" data-thumbnail="/img/posts/git/program-git.png">
+        <img
+            
+            loading="lazy"
+            src="/img/posts/git/program-git.png"
+            srcset="/img/posts/git/program-git.png, /img/posts/git/program-git.png 1.5x, /img/posts/git/program-git.png 2x"
+            alt="/img/posts/git/program-git.png" width="70%" >
+    </a><br>
+Maka akan muncul tampilan informasi dari lisensi Git, klik <em>Next &gt;</em> untuk melanjutkan.</p>
+<a class="lightgallery" href="/img/posts/git/lisensi-git.png" title="/img/posts/git/lisensi-git.png" data-thumbnail="/img/posts/git/lisensi-git.png">
+        <img
+            
+            loading="lazy"
+            src="/img/posts/git/lisensi-git.png"
+            srcset="/img/posts/git/lisensi-git.png, /img/posts/git/lisensi-git.png 1.5x, /img/posts/git/lisensi-git.png 2x"
+            alt="/img/posts/git/lisensi-git.png" width="70%" >
+    </a>
+<p>Selanjutnya ialah menentukan lokasi instalasi. Biarkan saja apa adanya, kemudian klik <em>Next &gt;.</em></p>
+<a class="lightgallery" href="/img/posts/git/lokasi-git.png" title="/img/posts/git/lokasi-git.png" data-thumbnail="/img/posts/git/lokasi-git.png">
+        <img
+            
+            loading="lazy"
+            src="/img/posts/git/lokasi-git.png"
+            srcset="/img/posts/git/lokasi-git.png, /img/posts/git/lokasi-git.png 1.5x, /img/posts/git/lokasi-git.png 2x"
+            alt="/img/posts/git/lokasi-git.png" width="70%" >
+    </a>
+<p>Selanjutnya pemilihan komponen, biarkan saja seperti ini kemudian klik <em>Next &gt;.</em></p>
+<a class="lightgallery" href="/img/posts/git/komponen-git.png" title="/img/posts/git/komponen-git.png" data-thumbnail="/img/posts/git/komponen-git.png">
+        <img
+            
+            loading="lazy"
+            src="/img/posts/git/komponen-git.png"
+            srcset="/img/posts/git/komponen-git.png, /img/posts/git/komponen-git.png 1.5x, /img/posts/git/komponen-git.png 2x"
+            alt="/img/posts/git/komponen-git.png" width="70%" >
+    </a>
+<p>Selanjutnya pemilihan direktori start menu, klik <em>klik Next &gt;.</em></p>
+<a class="lightgallery" href="/img/posts/git/direktori-git.png" title="/img/posts/git/direktori-git.png" data-thumbnail="/img/posts/git/direktori-git.png">
+        <img
+            
+            loading="lazy"
+            src="/img/posts/git/direktori-git.png"
+            srcset="/img/posts/git/direktori-git.png, /img/posts/git/direktori-git.png 1.5x, /img/posts/git/direktori-git.png 2x"
+            alt="/img/posts/git/direktori-git.png" width="70%" >
+    </a>
+<p>Selanjutnya pemilihan default editor yang akan digunakan untuk Git, disini saya memilih <em>visual studio code.</em> Setelah itu klik <em>Next &gt;.</em></p>
+<a class="lightgallery" href="/img/posts/git/default-editor-git.png" title="/img/posts/git/default-editor-git.png" data-thumbnail="/img/posts/git/default-editor-git.png">
+        <img
+            
+            loading="lazy"
+            src="/img/posts/git/default-editor-git.png"
+            srcset="/img/posts/git/default-editor-git.png, /img/posts/git/default-editor-git.png 1.5x, /img/posts/git/default-editor-git.png 2x"
+            alt="/img/posts/git/default-editor-git.png" width="70%" >
+    </a></div>
 
         <div class="post-footer" id="post-footer">
     <div class="post-info">

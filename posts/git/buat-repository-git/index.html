@@ -35,7 +35,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https://afrandormd.github.io/posts/git/buat-repository-git/"
-        },"genre": "posts","keywords": "Git","wordcount":  46 ,
+        },"genre": "posts","keywords": "Git","wordcount":  227 ,
         "url": "https://afrandormd.github.io/posts/git/buat-repository-git/","datePublished": "2024-03-27T21:25:45+07:00","dateModified": "2024-03-27T21:25:45+07:00","publisher": {
             "@type": "Organization",
             "name": "Afrando Sharein Ramadhan"},"authors": [{
@@ -119,7 +119,7 @@
             <div class="post-meta-line">
                 <span class="post-author"><span class='author'><span class="author fas fa-user-circle fa-fw"></span><span class='screen-reader-text'>  </span><a href='https://afrandormd.github.io/authors/afrando'>Afrando</a></span>
                 </span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-series">series <a href="/series/tutorial-git/"><i class="far fa-list-alt fa-fw"></i>Tutorial Git Untuk Pemula</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2024-03-27">2024-03-27</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2024-03-27">2024-03-27</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;46 words&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;One minute&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2024-03-27">2024-03-27</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2024-03-27">2024-03-27</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;227 words&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;</div>
         </div><div class="featured-image"><img
         
         loading="eager"
@@ -127,8 +127,29 @@
         srcset="/img/posts/git/tutorial-git.png, /img/posts/git/tutorial-git.png 1.5x, /img/posts/git/tutorial-git.png 2x"
         title="Pada tutorial kali ini kita akan belajar cara inisialisasi proyek kita dengan Git dan cara membuat repositori baru dengan Git" ></div><div class="content" id="content"><p><strong>Repositori</strong><em>(repository)</em> atau jika diterjemahkan ke dalam bahasa indonesia artinya ialah <em>gudang</em>. Repositori merupakan istilah yang digunakan untuk direktori proyek yang menggunakan Git.<br>
 Sebagai contoh, kita memiliki sebuah direktori dengan nama <code>projek-01</code> dan di dalamnya sudah menggunakan git, maka kita sudah punya repositori bernama <code>projek-01</code>.</p>
-<h2 id="inisialisasi-proyek" class="headerLink">
-    <a href="#inisialisasi-proyek" class="header-mark"></a>Inisialisasi Proyek</h2></div>
+<h2 id="membuat-repositori" class="headerLink">
+    <a href="#membuat-repositori" class="header-mark"></a>Membuat Repositori</h2><p>Untuk menjadikan proyek kita sebuah <em>repository</em> kita perlu menginisialisasi nya terlebih dahulu dengan menggunakan perintah <code>git init</code>. Perintah tersebut akan membuat sebuah direktori bernama <code>.git</code> di dalam proyek kita. Direktori ini digunakan Git sebagai database untuk menyimpan perubahan yang kita lakukan.</p>
+<blockquote>
+<p><strong>Perlu diingat!</strong>, jika kita menghapus direktori <code>.git</code>, maka seluruh rekaman atau catatan yang dilakukan oleh Git akan hilang.</p>
+</blockquote>
+<p>Berikut beberapa cara penggunaan perintah <code>git init</code>:</p>
+<h4 id="membuat-direktori-dan-repositori" class="headerLink">
+    <a href="#membuat-direktori-dan-repositori" class="header-mark"></a>Membuat direktori dan repositori</h4><p>Pembuatan repositori dapat dilakukan dengan perintah <code>git init nama-dir</code><br>
+<strong>Contoh:</strong></p>
+<pre tabindex="0"><code>git init projek-00
+</code></pre><p>Perintah tersebut akan membuat direktori bernama <code>projek-00</code>. jika direktorinya sudah ada, maka Git akan melakukan inisialisasi di dalam direktori tersebut.</p>
+<h4 id="membuat-repositori-pada-direktori-saat-ini" class="headerLink">
+    <a href="#membuat-repositori-pada-direktori-saat-ini" class="header-mark"></a>Membuat repositori pada direktori saat ini</h4><p>Perintah berikut ini akan membuat repositori pada direktori saat ini <em>(working directory)</em>
+<a class="lightgallery" href="/img/posts/git/git-init.png" title="/img/posts/git/git-init.png" data-thumbnail="/img/posts/git/git-init.png">
+        <img
+            
+            loading="lazy"
+            src="/img/posts/git/git-init.png"
+            srcset="/img/posts/git/git-init.png, /img/posts/git/git-init.png 1.5x, /img/posts/git/git-init.png 2x"
+            alt="/img/posts/git/git-init.png" width="80%" >
+    </a><br>
+<strong>Penjelasan:</strong><br>
+Pertama saya pindah direktori ke proyek yang akan saya jadikan <em>repositori</em> yakni <code>projek-01</code>, kemudian saya menjalankan perintah <code>git init</code> yang dimana perintah ini akan membuat direktori proyek menjadi sebuah repositori. Jika direktori berhasil menjadi repositori maka akan tampil nama branch <em>(main)</em>  di sebelah kanan <strong>working directory</strong>. Hal ini bisa terjadi dikarenakan saya menggunakan terminal <code>git bash</code> yang ada di <em><strong>Visual Studio Code</strong></em>.</p></div>
 
         <div class="post-footer" id="post-footer">
     <div class="post-info">

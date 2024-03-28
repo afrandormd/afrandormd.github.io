@@ -3,7 +3,15 @@
         <title>Git - Tag - afrandormd</title>
         <link>https://afrandormd.github.io/tags/git/</link>
         <description>Git - Tag - afrandormd</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 27 Mar 2024 21:25:45 &#43;0700</lastBuildDate><atom:link href="https://afrandormd.github.io/tags/git/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 28 Mar 2024 22:42:23 &#43;0700</lastBuildDate><atom:link href="https://afrandormd.github.io/tags/git/" rel="self" type="application/rss+xml" /><item>
+    <title>Tutorial Git 04: Melakukan Simpan Perubahan Revisi dengan Git Commit</title>
+    <link>https://afrandormd.github.io/posts/git/git-commit/</link>
+    <pubDate>Thu, 28 Mar 2024 22:42:23 &#43;0700</pubDate><author>
+                        <name>Afrando</name><uri>https://afrandormd.github.io</uri><email>afrandoshareinramadhan@gmail.com</email></author><guid>https://afrandormd.github.io/posts/git/git-commit/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/img/posts/git/tutorial-git.png" referrerpolicy="no-referrer">
+            </div>]]></description>
+</item><item>
     <title>Tutorial Git 03: Inisialisasi Git dan Cara Membuat Repositori Baru dalam Proyek</title>
     <link>https://afrandormd.github.io/posts/git/buat-repository-git/</link>
     <pubDate>Wed, 27 Mar 2024 21:25:45 &#43;0700</pubDate><author>

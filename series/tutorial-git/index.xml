@@ -3,7 +3,7 @@
         <title>Tutorial Git Untuk Pemula - Series - afrandormd</title>
         <link>https://afrandormd.github.io/series/tutorial-git/</link>
         <description>Tutorial Git Untuk Pemula - Series - afrandormd</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 27 Mar 2024 21:25:45 &#43;0700</lastBuildDate><atom:link href="https://afrandormd.github.io/series/tutorial-git/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 28 Mar 2024 22:42:23 &#43;0700</lastBuildDate><atom:link href="https://afrandormd.github.io/series/tutorial-git/" rel="self" type="application/rss+xml" /><item>
     <title>Belajar Git 01: Apa Itu Git dan Seberapa Penting Bagi Programmer?</title>
     <link>https://afrandormd.github.io/posts/git/apa-itu-git/</link>
     <pubDate>Sun, 17 Mar 2024 13:05:26 &#43;0700</pubDate><author>
@@ -27,5 +27,13 @@
     <description><![CDATA[<div class="featured-image">
                 <img src="/img/posts/git/tutorial-git.png" referrerpolicy="no-referrer">
             </div>Pada tutorial kali ini kita akan belajar cara inisialisasi proyek kita dengan Git dan cara membuat repositori baru dengan Git]]></description>
+</item><item>
+    <title>Tutorial Git 04: Melakukan Simpan Perubahan Revisi dengan Git Commit</title>
+    <link>https://afrandormd.github.io/posts/git/git-commit/</link>
+    <pubDate>Thu, 28 Mar 2024 22:42:23 &#43;0700</pubDate><author>
+                        <name>Afrando</name><uri>https://afrandormd.github.io</uri><email>afrandoshareinramadhan@gmail.com</email></author><guid>https://afrandormd.github.io/posts/git/git-commit/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/img/posts/git/tutorial-git.png" referrerpolicy="no-referrer">
+            </div>]]></description>
 </item></channel>
 </rss>

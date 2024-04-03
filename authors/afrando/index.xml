@@ -3,7 +3,15 @@
         <title>Afrando - Author - afrandormd</title>
         <link>https://afrandormd.github.io/authors/afrando/</link>
         <description>Afrando - Author - afrandormd</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 01 Apr 2024 13:15:34 &#43;0700</lastBuildDate><atom:link href="https://afrandormd.github.io/authors/afrando/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 03 Apr 2024 10:25:58 &#43;0700</lastBuildDate><atom:link href="https://afrandormd.github.io/authors/afrando/" rel="self" type="application/rss+xml" /><item>
+    <title>Belajar Dart: Tipe Data</title>
+    <link>https://afrandormd.github.io/posts/pemrograman-mobile/tipe-data-dart/</link>
+    <pubDate>Wed, 03 Apr 2024 10:25:58 &#43;0700</pubDate><author>
+                        <name>Afrando</name><uri>https://afrandormd.github.io</uri><email>afrandoshareinramadhan@gmail.com</email></author><guid>https://afrandormd.github.io/posts/pemrograman-mobile/tipe-data-dart/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/img/posts/pemrograman-mobile/fast-track-dart-flutter.png" referrerpolicy="no-referrer">
+            </div>]]></description>
+</item><item>
     <title>Pengenalan Dart dan Flutter</title>
     <link>https://afrandormd.github.io/posts/pemrograman-mobile/pengenalan-dart-flutter/</link>
     <pubDate>Mon, 01 Apr 2024 13:15:34 &#43;0700</pubDate><author>
@@ -73,13 +81,5 @@ Tantangan: Proyek FitFusion diinisiasi untuk mengatasi masalah umum yang dihadap
     <description><![CDATA[<div class="featured-image">
                 <img src="/img/posts/visualisasi-data/visualisasi-data.png" referrerpolicy="no-referrer">
             </div><p>Dalam era informasi yang kaya akan data, kemampuan untuk memahami dan menginterpretasikan informasi menjadi kunci dalam pengambilan keputusan yang efektif.</p>]]></description>
-</item><item>
-    <title>Memahami Arsitektur Monolithic &amp; Microservices: Perbandingan, Kelebihan dan kekurangannya</title>
-    <link>https://afrandormd.github.io/posts/microservices-vs-monolithic/</link>
-    <pubDate>Fri, 08 Mar 2024 03:39:32 &#43;0700</pubDate><author>
-                        <name>Afrando</name><uri>https://afrandormd.github.io</uri><email>afrandoshareinramadhan@gmail.com</email></author><guid>https://afrandormd.github.io/posts/microservices-vs-monolithic/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/img/posts/microservices/arsitektur-micro-mono.png" referrerpolicy="no-referrer">
-            </div>Memahami dua arsitektur pemrograman yang sering digunakan serta mengenal kelebihan dan kekurangan dari masing masing arsitektur.]]></description>
 </item></channel>
 </rss>

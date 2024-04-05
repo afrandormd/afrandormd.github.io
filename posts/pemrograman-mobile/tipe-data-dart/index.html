@@ -35,7 +35,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https://afrandormd.github.io/posts/pemrograman-mobile/tipe-data-dart/"
-        },"genre": "posts","keywords": "Dart","wordcount":  153 ,
+        },"genre": "posts","keywords": "Dart","wordcount":  252 ,
         "url": "https://afrandormd.github.io/posts/pemrograman-mobile/tipe-data-dart/","datePublished": "2024-04-03T10:25:58+07:00","dateModified": "2024-04-03T10:25:58+07:00","publisher": {
             "@type": "Organization",
             "name": "Afrando Sharein Ramadhan"},"authors": [{
@@ -119,7 +119,7 @@
             <div class="post-meta-line">
                 <span class="post-author"><span class='author'><span class="author fas fa-user-circle fa-fw"></span><span class='screen-reader-text'>  </span><a href='https://afrandormd.github.io/authors/afrando'>Afrando</a></span>
                 </span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-series">series <a href="/series/pemrograman-mobile/"><i class="far fa-list-alt fa-fw"></i>Pemrograman Mobile</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2024-04-03">2024-04-03</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2024-04-03">2024-04-03</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;153 words&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;One minute&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2024-04-03">2024-04-03</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2024-04-03">2024-04-03</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;252 words&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;</div>
         </div><div class="featured-image"><img
         
         loading="eager"
@@ -141,7 +141,42 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1">// Menggunakan tanda kutip dua (&#34;)
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kt">String</span> <span class="n">alamat</span> <span class="o">=</span> <span class="s2">&#34;Jl. Hajimena No. 666&#34;</span><span class="p">;</span>
-</span></span></code></pre></div></div>
+</span></span></code></pre></div><p><strong>Method pada tipe data String</strong></p>
+<p>Dalam bahasa pemrograman Dart, terdapat beberapa method yang umum digunakan pada tipe data <code>String</code>. di antaranya adalah sebagai berikut:</p>
+<ul>
+<li>
+<p><strong>length</strong>: berfungsi mengembalikan panjang <em>(jumlah karakter)</em> dari string.
+<em><strong>contoh penulisan</strong></em>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-dart" data-lang="dart"><span class="line"><span class="cl"><span class="kt">String</span> <span class="n">kata</span> <span class="o">=</span> <span class="s1">&#39;Hello&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">print</span><span class="p">(</span><span class="n">kata</span><span class="p">.</span><span class="n">length</span><span class="p">);</span>
+</span></span></code></pre></div><p><strong>Output</strong>:</p>
+<pre tabindex="0"><code class="language-Output" data-lang="Output">5
+</code></pre></li>
+<li>
+<p><strong>substring(int start, [int end])</strong>: berfungsi mengambil potongan string dari indeks mulai hingga indeks akhir (opsional).<br>
+<em><strong>contoh penulisan</strong></em>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-dart" data-lang="dart"><span class="line"><span class="cl"><span class="kt">String</span> <span class="n">kata</span> <span class="o">=</span> <span class="s1">&#39;Hello World&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">print</span><span class="p">(</span><span class="n">kata</span><span class="p">.</span><span class="n">substring</span><span class="p">(</span><span class="m">6</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl"><span class="n">print</span><span class="p">(</span><span class="n">kata</span><span class="p">.</span><span class="n">substring</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">5</span><span class="p">));</span>
+</span></span></code></pre></div><p><strong>Output</strong>:</p>
+<pre tabindex="0"><code class="language-output" data-lang="output">World 
+Hello
+</code></pre></li>
+<li>
+<p><strong>isEmpty</strong> dan <strong>isNotEmpty</strong>: ialah property yang berfungsi mengembalikan <em>true</em> jika string <strong>kosong</strong> atau <strong>tidak kosong</strong>.<br>
+<em><strong>contoh penulisan</strong></em>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-dart" data-lang="dart"><span class="line"><span class="cl"><span class="kt">String</span> <span class="n">kosong</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">String</span> <span class="n">tidakKosong</span> <span class="o">=</span> <span class="s1">&#39;Hello&#39;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">print</span><span class="p">(</span><span class="n">kosong</span><span class="p">.</span><span class="n">isEmpty</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">print</span><span class="p">(</span><span class="n">tidakKosong</span><span class="p">.</span><span class="n">isNotEmpty</span><span class="p">);</span>
+</span></span></code></pre></div><p><strong>Output</strong>:</p>
+<pre tabindex="0"><code class="language-output" data-lang="output">true
+true
+</code></pre></li>
+</ul></div>
 
         <div class="post-footer" id="post-footer">
     <div class="post-info">

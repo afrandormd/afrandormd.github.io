@@ -12,7 +12,7 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://afrandormd.github.io/posts/pemrograman-mobile/tipe-data-dart/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2024-04-03T10:25:58+07:00" />
-<meta property="article:modified_time" content="2024-04-06T10:25:58+07:00" />
+<meta property="article:modified_time" content="2024-04-07T10:25:58+07:00" />
 <meta property="og:see_also" content="https://afrandormd.github.io/posts/pemrograman-mobile/pengenalan-dart-flutter/" />
 
 <meta name="twitter:card" content="summary"/>
@@ -35,8 +35,8 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https://afrandormd.github.io/posts/pemrograman-mobile/tipe-data-dart/"
-        },"genre": "posts","keywords": "Dart","wordcount":  800 ,
-        "url": "https://afrandormd.github.io/posts/pemrograman-mobile/tipe-data-dart/","datePublished": "2024-04-03T10:25:58+07:00","dateModified": "2024-04-06T10:25:58+07:00","publisher": {
+        },"genre": "posts","keywords": "Dart","wordcount":  1195 ,
+        "url": "https://afrandormd.github.io/posts/pemrograman-mobile/tipe-data-dart/","datePublished": "2024-04-03T10:25:58+07:00","dateModified": "2024-04-07T10:25:58+07:00","publisher": {
             "@type": "Organization",
             "name": "Afrando Sharein Ramadhan"},"authors": [{
                         "@type": "Person",
@@ -119,7 +119,7 @@
             <div class="post-meta-line">
                 <span class="post-author"><span class='author'><span class="author fas fa-user-circle fa-fw"></span><span class='screen-reader-text'>  </span><a href='https://afrandormd.github.io/authors/afrando'>Afrando</a></span>
                 </span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-series">series <a href="/series/pemrograman-mobile/"><i class="far fa-list-alt fa-fw"></i>Pemrograman Mobile</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2024-04-03">2024-04-03</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2024-04-06">2024-04-06</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;800 words&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;4 minutes&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2024-04-03">2024-04-03</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2024-04-07">2024-04-07</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;1195 words&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;6 minutes&nbsp;</div>
         </div><div class="featured-image"><img
         
         loading="eager"
@@ -349,13 +349,111 @@ Rentang nilai: Sesuai dengan rentang nilai dari <code>int</code> dan <code>doubl
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">print</span><span class="p">(</span><span class="n">myNum</span><span class="p">.</span><span class="n">toString</span><span class="p">());</span> <span class="c1">// Output: -3.14
 </span></span></span></code></pre></div></li>
 </ul>
+<hr>
+<h3 id="list" class="headerLink">
+    <a href="#list" class="header-mark"></a>List</h3><p>Tipe data <code>List</code> dalam Dart digunakan untuk menyimpan kumpulan nilai atau objek dalam urutan tertentu. List mirip dengan <em><strong>array</strong></em> dalam banyak bahasa pemrograman lainnya. List dapat berisi objek dengan tipe data yang sama atau berbeda. Indeks dalam List dimulai dari 0.</p>
+<p><strong>Contoh Penulisan</strong>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-dart" data-lang="dart"><span class="line"><span class="cl"><span class="c1">// List dengan tipe data int
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">List</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="m">1</span><span class="p">,</span> <span class="m">2</span><span class="p">,</span> <span class="m">3</span><span class="p">,</span> <span class="m">4</span><span class="p">,</span> <span class="m">5</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// List dengan tipe data String
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">List</span><span class="o">&lt;</span><span class="kt">String</span><span class="o">&gt;</span> <span class="n">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Apple&#39;</span><span class="p">,</span> <span class="s1">&#39;Banana&#39;</span><span class="p">,</span> <span class="s1">&#39;Orange&#39;</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// List dengan tipe data dynamic (bisa menyimpan berbagai tipe data)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">List</span><span class="o">&lt;</span><span class="kt">dynamic</span><span class="o">&gt;</span> <span class="n">mixedList</span> <span class="o">=</span> <span class="p">[</span><span class="m">1</span><span class="p">,</span> <span class="s1">&#39;Hello&#39;</span><span class="p">,</span> <span class="kc">true</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// atau dapat ditulis seperti ini:
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">List</span> <span class="n">mixedList</span> <span class="o">=</span> <span class="p">[</span><span class="m">1</span><span class="p">,</span> <span class="s1">&#39;Hello&#39;</span><span class="p">,</span> <span class="kc">true</span><span class="p">];</span>
+</span></span></code></pre></div><p><strong>Method pada tipe data <code>List</code></strong>:</p>
+<ul>
+<li>
+<p><strong>add()</strong>: Menambahkan elemen ke akhir List.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-dart" data-lang="dart"><span class="line"><span class="cl"><span class="n">List</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="m">1</span><span class="p">,</span> <span class="m">2</span><span class="p">,</span> <span class="m">3</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="n">numbers</span><span class="p">.</span><span class="n">add</span><span class="p">(</span><span class="m">4</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">print</span><span class="p">(</span><span class="n">numbers</span><span class="p">);</span> <span class="c1">// Output: [1, 2, 3, 4]
+</span></span></span></code></pre></div></li>
+<li>
+<p><strong>addAll()</strong>: Menambahkan semua elemen dari List lain ke dalam List saat ini.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-dart" data-lang="dart"><span class="line"><span class="cl"><span class="n">List</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">numbers1</span> <span class="o">=</span> <span class="p">[</span><span class="m">1</span><span class="p">,</span> <span class="m">2</span><span class="p">,</span> <span class="m">3</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="n">List</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">numbers2</span> <span class="o">=</span> <span class="p">[</span><span class="m">4</span><span class="p">,</span> <span class="m">5</span><span class="p">,</span> <span class="m">6</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="n">numbers1</span><span class="p">.</span><span class="n">addAll</span><span class="p">(</span><span class="n">numbers2</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">print</span><span class="p">(</span><span class="n">numbers1</span><span class="p">);</span> <span class="c1">// Output: [1, 2, 3, 4, 5, 6]
+</span></span></span></code></pre></div></li>
+<li>
+<p><strong>remove()</strong>: Menghapus elemen tertentu dari List.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-dart" data-lang="dart"><span class="line"><span class="cl"><span class="n">List</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="m">1</span><span class="p">,</span> <span class="m">2</span><span class="p">,</span> <span class="m">3</span><span class="p">,</span> <span class="m">4</span><span class="p">,</span> <span class="m">5</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="n">numbers</span><span class="p">.</span><span class="n">remove</span><span class="p">(</span><span class="m">3</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">print</span><span class="p">(</span><span class="n">numbers</span><span class="p">);</span> <span class="c1">// Output: [1, 2, 4, 5]
+</span></span></span></code></pre></div></li>
+<li>
+<p><strong>length()</strong>: Mengembalikan jumlah elemen dalam List.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-dart" data-lang="dart"><span class="line"><span class="cl"><span class="n">List</span><span class="o">&lt;</span><span class="kt">String</span><span class="o">&gt;</span> <span class="n">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Apple&#39;</span><span class="p">,</span> <span class="s1">&#39;Banana&#39;</span><span class="p">,</span> <span class="s1">&#39;Orange&#39;</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="n">print</span><span class="p">(</span><span class="n">fruits</span><span class="p">.</span><span class="n">length</span><span class="p">);</span> <span class="c1">// Output: 3
+</span></span></span></code></pre></div></li>
+<li>
+<p><strong>insert()</strong>: Menyisipkan elemen pada indeks tertentu.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-dart" data-lang="dart"><span class="line"><span class="cl"><span class="n">List</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="m">1</span><span class="p">,</span> <span class="m">2</span><span class="p">,</span> <span class="m">4</span><span class="p">,</span> <span class="m">5</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="n">numbers</span><span class="p">.</span><span class="n">insert</span><span class="p">(</span><span class="m">2</span><span class="p">,</span> <span class="m">3</span><span class="p">);</span> <span class="c1">// Menyisipkan 3 pada indeks ke-2
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">print</span><span class="p">(</span><span class="n">numbers</span><span class="p">);</span> <span class="c1">// Output: [1, 2, 3, 4, 5]
+</span></span></span></code></pre></div></li>
+<li>
+<p><strong>clear()</strong>: Menghapus semua elemen dalam List.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-dart" data-lang="dart"><span class="line"><span class="cl"><span class="n">List</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="m">1</span><span class="p">,</span> <span class="m">2</span><span class="p">,</span> <span class="m">3</span><span class="p">,</span> <span class="m">4</span><span class="p">,</span> <span class="m">5</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="n">numbers</span><span class="p">.</span><span class="n">clear</span><span class="p">();</span> 
+</span></span><span class="line"><span class="cl"><span class="n">print</span><span class="p">(</span><span class="n">numbers</span><span class="p">);</span> <span class="c1">// Output: []
+</span></span></span></code></pre></div></li>
+<li>
+<p><strong>contains()</strong>: Memeriksa apakah list mengandung suatu nilai.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-dart" data-lang="dart"><span class="line"><span class="cl"><span class="n">List</span><span class="o">&lt;</span><span class="kt">String</span><span class="o">&gt;</span> <span class="n">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Apple&#39;</span><span class="p">,</span> <span class="s1">&#39;Banana&#39;</span><span class="p">,</span> <span class="s1">&#39;Orange&#39;</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="n">print</span><span class="p">(</span><span class="n">fruits</span><span class="p">.</span><span class="n">contains</span><span class="p">(</span><span class="s1">&#39;Banana&#39;</span><span class="p">));</span> <span class="c1">// Output: true
+</span></span></span></code></pre></div></li>
+<li>
+<p><strong>forEach()</strong>: Iterasi melalui setiap elemen dalam List.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-dart" data-lang="dart"><span class="line"><span class="cl"><span class="n">List</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="m">1</span><span class="p">,</span> <span class="m">2</span><span class="p">,</span> <span class="m">3</span><span class="p">,</span> <span class="m">4</span><span class="p">,</span> <span class="m">5</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="n">numbers</span><span class="p">.</span><span class="n">forEach</span><span class="p">((</span><span class="n">number</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="n">print</span><span class="p">(</span><span class="n">number</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// Output:
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 1
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 2
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 3
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 4
+</span></span></span><span class="line"><span class="cl"><span class="c1">// 5
+</span></span></span></code></pre></div></li>
+<li>
+<p><strong>sort()</strong>: Mengurutkan elemen dalam List.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-dart" data-lang="dart"><span class="line"><span class="cl"><span class="n">List</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="m">3</span><span class="p">,</span> <span class="m">1</span><span class="p">,</span> <span class="m">4</span><span class="p">,</span> <span class="m">2</span><span class="p">,</span> <span class="m">5</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="n">numbers</span><span class="p">.</span><span class="n">sort</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="n">print</span><span class="p">(</span><span class="n">numbers</span><span class="p">);</span> <span class="c1">// Output: [1, 2, 3, 4, 5]
+</span></span></span></code></pre></div></li>
+<li>
+<p><strong>indexOf()</strong>: Mendapatkan indeks pertama dari nilai tertentu.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-dart" data-lang="dart"><span class="line"><span class="cl"><span class="n">List</span><span class="o">&lt;</span><span class="kt">String</span><span class="o">&gt;</span> <span class="n">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Apple&#39;</span><span class="p">,</span> <span class="s1">&#39;Banana&#39;</span><span class="p">,</span> <span class="s1">&#39;Orange&#39;</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="n">print</span><span class="p">(</span><span class="n">fruits</span><span class="p">.</span><span class="n">indexOf</span><span class="p">(</span><span class="s1">&#39;Banana&#39;</span><span class="p">));</span> <span class="c1">// Output: 1
+</span></span></span></code></pre></div></li>
+<li>
+<p><strong>toList()</strong>: Mengonversi objek Iterable menjadi List.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-dart" data-lang="dart"><span class="line"><span class="cl"><span class="n">Iterable</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">iterableNumbers</span> <span class="o">=</span> <span class="p">[</span><span class="m">1</span><span class="p">,</span> <span class="m">2</span><span class="p">,</span> <span class="m">3</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="n">List</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">numbersList</span> <span class="o">=</span> <span class="n">iterableNumbers</span><span class="p">.</span><span class="n">toList</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="n">print</span><span class="p">(</span><span class="n">numbersList</span><span class="p">);</span> <span class="c1">// Output: [1, 2, 3]
+</span></span></span></code></pre></div><blockquote>
+<p><strong>Iterable</strong> ialah konsep yang digunakan untuk merepresentasikan objek yang dapat diiterasi atau diulang.</p>
+</blockquote>
+</li>
+<li>
+<p><strong>removeAt()</strong>: Menghapus elemen pada indeks tertentu.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-dart" data-lang="dart"><span class="line"><span class="cl"><span class="n">List</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="m">1</span><span class="p">,</span> <span class="m">2</span><span class="p">,</span> <span class="m">3</span><span class="p">,</span> <span class="m">4</span><span class="p">,</span> <span class="m">5</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="n">numbers</span><span class="p">.</span><span class="n">removeAt</span><span class="p">(</span><span class="m">2</span><span class="p">);</span> <span class="c1">// Menghapus elemen pada indeks ke-2 (nilai 3) 
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">print</span><span class="p">(</span><span class="n">numbers</span><span class="p">);</span> <span class="c1">// Output: [1, 2, 4, 5]
+</span></span></span></code></pre></div></li>
+</ul>
 <hr></div>
 
         <div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>Updated on 2024-04-06</span>
+                <span>Updated on 2024-04-07</span>
             </div>
             <div class="post-info-license"></div>
         </div>

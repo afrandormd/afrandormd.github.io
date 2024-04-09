@@ -3,7 +3,15 @@
         <title>Afrando - Author - afrandormd</title>
         <link>https://afrandormd.github.io/authors/afrando/</link>
         <description>Afrando - Author - afrandormd</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 03 Apr 2024 10:25:58 &#43;0700</lastBuildDate><atom:link href="https://afrandormd.github.io/authors/afrando/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 09 Apr 2024 20:25:21 &#43;0700</lastBuildDate><atom:link href="https://afrandormd.github.io/authors/afrando/" rel="self" type="application/rss+xml" /><item>
+    <title>Belajar Dart: Comments</title>
+    <link>https://afrandormd.github.io/posts/pemrograman-mobile/comments-dart/</link>
+    <pubDate>Tue, 09 Apr 2024 20:25:21 &#43;0700</pubDate><author>
+                        <name>Afrando</name><uri>https://afrandormd.github.io</uri><email>afrandoshareinramadhan@gmail.com</email></author><guid>https://afrandormd.github.io/posts/pemrograman-mobile/comments-dart/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/img/posts/pemrograman-mobile/fast-track-dart-flutter.png" referrerpolicy="no-referrer">
+            </div>]]></description>
+</item><item>
     <title>Belajar Dart: Tipe Data</title>
     <link>https://afrandormd.github.io/posts/pemrograman-mobile/tipe-data-dart/</link>
     <pubDate>Wed, 03 Apr 2024 10:25:58 &#43;0700</pubDate><author>
@@ -73,13 +81,5 @@ Nama Sinau Geometry diambil dari kata Sinau yang berasal dari bahasa jawa yang b
                         <name>Afrando</name><uri>https://afrandormd.github.io</uri><email>afrandoshareinramadhan@gmail.com</email></author><guid>https://afrandormd.github.io/proj/fitfusion/</guid>
     <description><![CDATA[FitFusion - Aplikasi Desain UI/UX untuk Aplikasi FitnessFitFusion adalah sebuah proyek desain UI/UX yang bertujuan untuk menyediakan pengalaman fitness yang menyenangkan dan mudah digunakan bagi pengguna dari berbagai tingkat kebugaran. Aplikasi ini dirancang dengan fokus pada antarmuka yang ramah pengguna, fitur-fitur inovatif untuk pelacak aktivitas, dan personalisasi yang memungkinkan pengguna untuk mencapai tujuan kebugaran mereka dengan lebih efektif.
 Tantangan: Proyek FitFusion diinisiasi untuk mengatasi masalah umum yang dihadapi oleh pengguna aplikasi fitness saat ini.]]></description>
-</item><item>
-    <title>Belajar Visualisasi Data</title>
-    <link>https://afrandormd.github.io/posts/belajar-visualisasi-data/</link>
-    <pubDate>Sat, 09 Mar 2024 15:41:10 &#43;0700</pubDate><author>
-                        <name>Afrando</name><uri>https://afrandormd.github.io</uri><email>afrandoshareinramadhan@gmail.com</email></author><guid>https://afrandormd.github.io/posts/belajar-visualisasi-data/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/img/posts/visualisasi-data/visualisasi-data.png" referrerpolicy="no-referrer">
-            </div><p>Dalam era informasi yang kaya akan data, kemampuan untuk memahami dan menginterpretasikan informasi menjadi kunci dalam pengambilan keputusan yang efektif.</p>]]></description>
 </item></channel>
 </rss>

@@ -3,7 +3,15 @@
         <title>Afrando - Author - afrandormd</title>
         <link>https://afrandormd.github.io/authors/afrando/</link>
         <description>Afrando - Author - afrandormd</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 09 Apr 2024 20:25:21 &#43;0700</lastBuildDate><atom:link href="https://afrandormd.github.io/authors/afrando/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 10 Apr 2024 20:55:29 &#43;0700</lastBuildDate><atom:link href="https://afrandormd.github.io/authors/afrando/" rel="self" type="application/rss+xml" /><item>
+    <title>Belajar Dart: Final &amp; Const</title>
+    <link>https://afrandormd.github.io/posts/pemrograman-mobile/final-const-dart/</link>
+    <pubDate>Wed, 10 Apr 2024 20:55:29 &#43;0700</pubDate><author>
+                        <name>Afrando</name><uri>https://afrandormd.github.io</uri><email>afrandoshareinramadhan@gmail.com</email></author><guid>https://afrandormd.github.io/posts/pemrograman-mobile/final-const-dart/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/img/posts/pemrograman-mobile/fast-track-dart-flutter.png" referrerpolicy="no-referrer">
+            </div>]]></description>
+</item><item>
     <title>Belajar Dart: Comments</title>
     <link>https://afrandormd.github.io/posts/pemrograman-mobile/comments-dart/</link>
     <pubDate>Tue, 09 Apr 2024 20:25:21 &#43;0700</pubDate><author>
@@ -74,12 +82,5 @@
                         <name>Afrando</name><uri>https://afrandormd.github.io</uri><email>afrandoshareinramadhan@gmail.com</email></author><guid>https://afrandormd.github.io/proj/sinau-geometry/</guid>
     <description><![CDATA[Sinau Geometry - Aplikasi Pembelajaran Bangun Ruang Berbasis Augmented RealitySinau Geometry adalah aplikasi pembelajaran bangun ruang yang menggunakan teknologi augmented reality (AR) untuk memberikan pengalaman belajar yang interaktif dan menyenangkan bagi anak-anak SD hingga SMP.
 Nama Sinau Geometry diambil dari kata Sinau yang berasal dari bahasa jawa yang berarti Belajar, dan kata Geometry dari bahasa inggris, yang berarti Bangun Ruang. Aplikasi ini berfokus pada konsep bangun ruang, memungkinkan pengguna untuk memahami konsep-konsep matematika secara visual dan praktis.]]></description>
-</item><item>
-    <title>Fitfusion</title>
-    <link>https://afrandormd.github.io/proj/fitfusion/</link>
-    <pubDate>Mon, 11 Mar 2024 00:12:23 &#43;0700</pubDate><author>
-                        <name>Afrando</name><uri>https://afrandormd.github.io</uri><email>afrandoshareinramadhan@gmail.com</email></author><guid>https://afrandormd.github.io/proj/fitfusion/</guid>
-    <description><![CDATA[FitFusion - Aplikasi Desain UI/UX untuk Aplikasi FitnessFitFusion adalah sebuah proyek desain UI/UX yang bertujuan untuk menyediakan pengalaman fitness yang menyenangkan dan mudah digunakan bagi pengguna dari berbagai tingkat kebugaran. Aplikasi ini dirancang dengan fokus pada antarmuka yang ramah pengguna, fitur-fitur inovatif untuk pelacak aktivitas, dan personalisasi yang memungkinkan pengguna untuk mencapai tujuan kebugaran mereka dengan lebih efektif.
-Tantangan: Proyek FitFusion diinisiasi untuk mengatasi masalah umum yang dihadapi oleh pengguna aplikasi fitness saat ini.]]></description>
 </item></channel>
 </rss>

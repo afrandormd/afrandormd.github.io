@@ -12,7 +12,7 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://afrandormd.github.io/posts/pemrograman-mobile/final-const-dart/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2024-04-10T20:55:29+07:00" />
-<meta property="article:modified_time" content="2024-04-10T20:55:29+07:00" />
+<meta property="article:modified_time" content="2024-04-11T20:55:29+07:00" />
 <meta property="og:see_also" content="https://afrandormd.github.io/posts/pemrograman-mobile/pengenalan-dart-flutter/" /><meta property="og:see_also" content="https://afrandormd.github.io/posts/pemrograman-mobile/tipe-data-dart/" /><meta property="og:see_also" content="https://afrandormd.github.io/posts/pemrograman-mobile/comments-dart/" />
 
 <meta name="twitter:card" content="summary"/>
@@ -35,8 +35,8 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https://afrandormd.github.io/posts/pemrograman-mobile/final-const-dart/"
-        },"genre": "posts","keywords": "Dart","wordcount":  92 ,
-        "url": "https://afrandormd.github.io/posts/pemrograman-mobile/final-const-dart/","datePublished": "2024-04-10T20:55:29+07:00","dateModified": "2024-04-10T20:55:29+07:00","publisher": {
+        },"genre": "posts","keywords": "Dart","wordcount":  324 ,
+        "url": "https://afrandormd.github.io/posts/pemrograman-mobile/final-const-dart/","datePublished": "2024-04-10T20:55:29+07:00","dateModified": "2024-04-11T20:55:29+07:00","publisher": {
             "@type": "Organization",
             "name": "Afrando Sharein Ramadhan"},"authors": [{
                         "@type": "Person",
@@ -119,7 +119,7 @@
             <div class="post-meta-line">
                 <span class="post-author"><span class='author'><span class="author fas fa-user-circle fa-fw"></span><span class='screen-reader-text'>  </span><a href='https://afrandormd.github.io/authors/afrando'>Afrando</a></span>
                 </span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-series">series <a href="/series/pemrograman-mobile/"><i class="far fa-list-alt fa-fw"></i>Pemrograman Mobile</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2024-04-10">2024-04-10</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2024-04-10">2024-04-10</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;92 words&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;One minute&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2024-04-10">2024-04-10</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2024-04-11">2024-04-11</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;324 words&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;</div>
         </div><div class="featured-image"><img
         
         loading="eager"
@@ -155,13 +155,63 @@
 </tbody>
 </table>
 <h3 id="contoh-penggunaan" class="headerLink">
-    <a href="#contoh-penggunaan" class="header-mark"></a>Contoh Penggunaan</h3><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-dart" data-lang="dart"></code></pre></div></div>
+    <a href="#contoh-penggunaan" class="header-mark"></a>Contoh Penggunaan</h3><h5 id="final" class="headerLink">
+    <a href="#final" class="header-mark"></a>Final</h5><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-dart" data-lang="dart"><span class="line"><span class="cl">  <span class="kd">final</span> <span class="kt">String</span> <span class="n">babyName</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="n">babyName</span> <span class="o">=</span> <span class="s2">&#34;Rando&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="n">babyName</span> <span class="o">=</span> <span class="s2">&#34;Randi&#34;</span><span class="p">;</span> <span class="c1">// error
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">  <span class="n">print</span><span class="p">(</span><span class="n">babyName</span><span class="p">);</span>
+</span></span></code></pre></div><p>Setelah Program dijalankan maka akan muncul error seperti berikut:
+<a class="lightgallery" href="/img/posts/pemrograman-mobile/error-final-dart.png" title="/img/posts/pemrograman-mobile/error-final-dart.png" data-thumbnail="/img/posts/pemrograman-mobile/error-final-dart.png">
+        <img
+            
+            loading="lazy"
+            src="/img/posts/pemrograman-mobile/error-final-dart.png"
+            srcset="/img/posts/pemrograman-mobile/error-final-dart.png, /img/posts/pemrograman-mobile/error-final-dart.png 1.5x, /img/posts/pemrograman-mobile/error-final-dart.png 2x"
+            alt="/img/posts/pemrograman-mobile/error-final-dart.png" width="100%" >
+    </a></p>
+<p><em><strong>Analogi dan Penjelasan:</strong></em></p>
+<ul>
+<li>Bayangkan jika ada sebuah papan nama untuk anak yang baru lahir, di mana orang tua bisa menulis nama bayi mereka.</li>
+<li>Variabel <code>babyName</code> dalam program ini adalah seperti papan nama tersebut, di mana orang tua menulis nama pertama kali saat bayi lahir.</li>
+<li>Saat pertama kali, orang tua menulis nama <code>&quot;Rando&quot;</code> di papan nama tersebut <em>(variabel babyName = &ldquo;Rando&rdquo;)</em>.</li>
+<li>Namun, seperti sebuah papan nama yang sudah terpasang, setelah nama tertulis di sana, kita tidak bisa mengubahnya. Jika kita mencoba menulis nama yang berbeda di papan nama yang sama, akan ada kesalahan, sama halnya dalam program saat kita mencoba mengubah nilai variabel <code>babyName</code> setelah inisialisasi pertama.</li>
+</ul>
+<p>jadi penulisan yang benar adalah seperti ini:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-dart" data-lang="dart"><span class="line"><span class="cl"><span class="kd">final</span> <span class="kt">String</span> <span class="n">babyName</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">babyName</span> <span class="o">=</span> <span class="s2">&#34;Rando&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">print</span><span class="p">(</span><span class="n">babyName</span><span class="p">);</span>
+</span></span></code></pre></div><h5 id="const" class="headerLink">
+    <a href="#const" class="header-mark"></a>Const</h5><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-dart" data-lang="dart"><span class="line"><span class="cl"><span class="kd">const</span> <span class="kt">String</span> <span class="n">name</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">name</span> <span class="o">=</span> <span class="s2">&#34;Rando&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">print</span><span class="p">(</span><span class="n">name</span><span class="p">);</span>
+</span></span></code></pre></div><p>jika kita menuliskan seperti di atas maka akan muncul error seperti berikut ini:<br>
+<a class="lightgallery" href="/img/posts/pemrograman-mobile/error-const-dart.png" title="/img/posts/pemrograman-mobile/error-const-dart.png" data-thumbnail="/img/posts/pemrograman-mobile/error-const-dart.png">
+        <img
+            
+            loading="lazy"
+            src="/img/posts/pemrograman-mobile/error-const-dart.png"
+            srcset="/img/posts/pemrograman-mobile/error-const-dart.png, /img/posts/pemrograman-mobile/error-const-dart.png 1.5x, /img/posts/pemrograman-mobile/error-const-dart.png 2x"
+            alt="/img/posts/pemrograman-mobile/error-const-dart.png" width="100%" >
+    </a></p>
+<p><em><strong>Penjelasan:</strong></em></p>
+<ul>
+<li>Berbeda dengan <code>final</code> pada <code>const</code> nilai_(value)_ dari variabel yang dibuat wajib langsung di beri. Dalam contoh ini <em>(variable name)</em></li>
+</ul>
+<p>jadi penulisan yang benar adalah seperti ini:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-dart" data-lang="dart"><span class="line"><span class="cl"><span class="kd">const</span> <span class="kt">String</span> <span class="n">name</span> <span class="o">=</span> <span class="s2">&#34;Rando&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">print</span><span class="p">(</span><span class="n">name</span><span class="p">);</span>
+</span></span></code></pre></div><p><strong>Kesimpulan</strong><br>
+keduanya memiliki kesamaan yaitu membuat variabel tidak bisa di ubah nilai <em>(value)</em>-nya dikemudian hari. Namun jika kita menggunakan <code>final</code> kita bisa memberi nilainya nanti, sedangkan pada <code>const</code> nilainya wajib di beri saat pertama kali pembuatan variabel.</p></div>
 
         <div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
-                <span>Updated on 2024-04-10</span>
+                <span>Updated on 2024-04-11</span>
             </div>
             <div class="post-info-license"></div>
         </div>

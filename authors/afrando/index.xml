@@ -3,7 +3,15 @@
         <title>Afrando - Author - afrandormd</title>
         <link>https://afrandormd.github.io/authors/afrando/</link>
         <description>Afrando - Author - afrandormd</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 10 Apr 2024 20:55:29 &#43;0700</lastBuildDate><atom:link href="https://afrandormd.github.io/authors/afrando/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 12 Apr 2024 22:12:05 &#43;0700</lastBuildDate><atom:link href="https://afrandormd.github.io/authors/afrando/" rel="self" type="application/rss+xml" /><item>
+    <title>Belajar Dart: Function</title>
+    <link>https://afrandormd.github.io/posts/pemrograman-mobile/function-dart/</link>
+    <pubDate>Fri, 12 Apr 2024 22:12:05 &#43;0700</pubDate><author>
+                        <name>Afrando</name><uri>https://afrandormd.github.io</uri><email>afrandoshareinramadhan@gmail.com</email></author><guid>https://afrandormd.github.io/posts/pemrograman-mobile/function-dart/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/img/posts/pemrograman-mobile/fast-track-dart-flutter.png" referrerpolicy="no-referrer">
+            </div>]]></description>
+</item><item>
     <title>Belajar Dart: Final &amp; Const</title>
     <link>https://afrandormd.github.io/posts/pemrograman-mobile/final-const-dart/</link>
     <pubDate>Wed, 10 Apr 2024 20:55:29 &#43;0700</pubDate><author>
@@ -75,12 +83,5 @@
     <description><![CDATA[<div class="featured-image">
                 <img src="/img/posts/python/dasar-python.png" referrerpolicy="no-referrer">
             </div>Python adalah bahasa tingkat tinggi untuk backend, machine learning, AI, Dekstop, IoT, dll.]]></description>
-</item><item>
-    <title>Sinau Geometry</title>
-    <link>https://afrandormd.github.io/proj/sinau-geometry/</link>
-    <pubDate>Tue, 12 Mar 2024 03:06:39 &#43;0700</pubDate><author>
-                        <name>Afrando</name><uri>https://afrandormd.github.io</uri><email>afrandoshareinramadhan@gmail.com</email></author><guid>https://afrandormd.github.io/proj/sinau-geometry/</guid>
-    <description><![CDATA[Sinau Geometry - Aplikasi Pembelajaran Bangun Ruang Berbasis Augmented RealitySinau Geometry adalah aplikasi pembelajaran bangun ruang yang menggunakan teknologi augmented reality (AR) untuk memberikan pengalaman belajar yang interaktif dan menyenangkan bagi anak-anak SD hingga SMP.
-Nama Sinau Geometry diambil dari kata Sinau yang berasal dari bahasa jawa yang berarti Belajar, dan kata Geometry dari bahasa inggris, yang berarti Bangun Ruang. Aplikasi ini berfokus pada konsep bangun ruang, memungkinkan pengguna untuk memahami konsep-konsep matematika secara visual dan praktis.]]></description>
 </item></channel>
 </rss>

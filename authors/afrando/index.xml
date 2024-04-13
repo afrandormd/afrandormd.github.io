@@ -3,7 +3,15 @@
         <title>Afrando - Author - afrandormd</title>
         <link>https://afrandormd.github.io/authors/afrando/</link>
         <description>Afrando - Author - afrandormd</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 12 Apr 2024 22:12:05 &#43;0700</lastBuildDate><atom:link href="https://afrandormd.github.io/authors/afrando/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 13 Apr 2024 22:47:35 &#43;0700</lastBuildDate><atom:link href="https://afrandormd.github.io/authors/afrando/" rel="self" type="application/rss+xml" /><item>
+    <title>Belajar Dart: Asynchronous</title>
+    <link>https://afrandormd.github.io/posts/pemrograman-mobile/asynchronous-dart/</link>
+    <pubDate>Sat, 13 Apr 2024 22:47:35 &#43;0700</pubDate><author>
+                        <name>Afrando</name><uri>https://afrandormd.github.io</uri><email>afrandoshareinramadhan@gmail.com</email></author><guid>https://afrandormd.github.io/posts/pemrograman-mobile/asynchronous-dart/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/img/posts/pemrograman-mobile/fast-track-dart-flutter.png" referrerpolicy="no-referrer">
+            </div>]]></description>
+</item><item>
     <title>Belajar Dart: Function</title>
     <link>https://afrandormd.github.io/posts/pemrograman-mobile/function-dart/</link>
     <pubDate>Fri, 12 Apr 2024 22:12:05 &#43;0700</pubDate><author>
@@ -75,13 +83,5 @@
     <description><![CDATA[<div class="featured-image">
                 <img src="/img/posts/git/tutorial-git.png" referrerpolicy="no-referrer">
             </div>Git merupakan salah satu version control system yang dimana tools ini sangat diperlukan untuk melakukan tracking perubahan source code dan melakukan kolaborasi antar sesama programmer.]]></description>
-</item><item>
-    <title>Mengenal Bahasa Pemrograman Python</title>
-    <link>https://afrandormd.github.io/posts/python/mengenal-bahasa-python/</link>
-    <pubDate>Wed, 13 Mar 2024 23:15:08 &#43;0700</pubDate><author>
-                        <name>Afrando</name><uri>https://afrandormd.github.io</uri><email>afrandoshareinramadhan@gmail.com</email></author><guid>https://afrandormd.github.io/posts/python/mengenal-bahasa-python/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/img/posts/python/dasar-python.png" referrerpolicy="no-referrer">
-            </div>Python adalah bahasa tingkat tinggi untuk backend, machine learning, AI, Dekstop, IoT, dll.]]></description>
 </item></channel>
 </rss>

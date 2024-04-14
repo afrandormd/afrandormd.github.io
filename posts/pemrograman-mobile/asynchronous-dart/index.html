@@ -35,7 +35,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https://afrandormd.github.io/posts/pemrograman-mobile/asynchronous-dart/"
-        },"genre": "posts","keywords": "Dart","wordcount":  2 ,
+        },"genre": "posts","keywords": "Dart","wordcount":  150 ,
         "url": "https://afrandormd.github.io/posts/pemrograman-mobile/asynchronous-dart/","datePublished": "2024-04-13T22:47:35+07:00","dateModified": "2024-04-13T22:47:35+07:00","publisher": {
             "@type": "Organization",
             "name": "Afrando Sharein Ramadhan"},"authors": [{
@@ -119,14 +119,28 @@
             <div class="post-meta-line">
                 <span class="post-author"><span class='author'><span class="author fas fa-user-circle fa-fw"></span><span class='screen-reader-text'>  </span><a href='https://afrandormd.github.io/authors/afrando'>Afrando</a></span>
                 </span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-series">series <a href="/series/pemrograman-mobile/"><i class="far fa-list-alt fa-fw"></i>Pemrograman Mobile</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2024-04-13">2024-04-13</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2024-04-13">2024-04-13</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;2 words&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;One minute&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2024-04-13">2024-04-13</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2024-04-13">2024-04-13</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;150 words&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;One minute&nbsp;</div>
         </div><div class="featured-image"><img
         
         loading="eager"
         src="/img/posts/pemrograman-mobile/fast-track-dart-flutter.png"
         srcset="/img/posts/pemrograman-mobile/fast-track-dart-flutter.png, /img/posts/pemrograman-mobile/fast-track-dart-flutter.png 1.5x, /img/posts/pemrograman-mobile/fast-track-dart-flutter.png 2x"
-        title="/img/posts/pemrograman-mobile/fast-track-dart-flutter.png" ></div><div class="content" id="content"><h2 id="asynchronous-dart" class="headerLink">
-    <a href="#asynchronous-dart" class="header-mark"></a>Asynchronous Dart</h2></div>
+        title="/img/posts/pemrograman-mobile/fast-track-dart-flutter.png" ></div><div class="content" id="content"><h2 id="apa-itu-asynchronous-programming" class="headerLink">
+    <a href="#apa-itu-asynchronous-programming" class="header-mark"></a>Apa itu Asynchronous Programming?</h2><p>Dalam bahasa pemrograman <strong>asynchronous programming</strong> adalah teknik yang memungkinkan kode untuk berjalan secara <em>non-blocking</em>, artinya kode dapat menjalankan tugas - tugas yang membutuhkan waktu tanpa menghentikan eksekusi program. Hal ini sangat berguna saat melakukan operasi jaringan (seperti mengambil data dari internet), operasi file I/O, atau operasi yang membutuhkan waktu yang tidak dapat diprediksi.</p>
+<h2 id="mengapa-asynchronous-penting" class="headerLink">
+    <a href="#mengapa-asynchronous-penting" class="header-mark"></a>Mengapa Asynchronous Penting?</h2><ul>
+<li>
+<p><strong>Menghindari Blocking</strong><br>
+Dalam pemrograman asynchronous, program tidak perlu menunggu operasi yang memakan waktu untuk selesai sebelum melanjutkan eksekusi kode lainnya yang memungkinkan program bisa terus berjalan tanpa terblokir.</p>
+</li>
+<li>
+<p><strong>Meningkatkan Responsivitas:</strong><br>
+Dengan asynchronous, program bisa menjalankan tugas - tugas lainnya selama menunggu operasi yang lambat, seperti memuat data dari internet. Hal ini meningkatkan responsivitas program, terutama dalam aplikasi yang interaktif.</p>
+</li>
+</ul>
+<h2 id="asynchronous-di-dart" class="headerLink">
+    <a href="#asynchronous-di-dart" class="header-mark"></a>Asynchronous di Dart</h2><p>Di bahasa pemrograman dart, untuk melakukan asynchronous kita menggunakan <code>future</code>, future sendiri ialah objek yang merepresentasikan nilai yang belum tersedia saat ini, tetapi akan tersedia di masa depan.</p>
+<p><strong>Contoh penggunaan:</strong></p></div>
 
         <div class="post-footer" id="post-footer">
     <div class="post-info">

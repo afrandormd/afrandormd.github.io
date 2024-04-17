@@ -3,7 +3,15 @@
         <title>All Posts - afrandormd</title>
         <link>https://afrandormd.github.io/posts/</link>
         <description>All Posts | afrandormd</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 13 Apr 2024 22:47:35 &#43;0700</lastBuildDate><atom:link href="https://afrandormd.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 17 Apr 2024 21:29:40 &#43;0700</lastBuildDate><atom:link href="https://afrandormd.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Exceptions Dart</title>
+    <link>https://afrandormd.github.io/posts/pemrograman-mobile/exceptions-dart/</link>
+    <pubDate>Wed, 17 Apr 2024 21:29:40 &#43;0700</pubDate><author>
+                        <name>Afrando</name><uri>https://afrandormd.github.io</uri><email>afrandoshareinramadhan@gmail.com</email></author><guid>https://afrandormd.github.io/posts/pemrograman-mobile/exceptions-dart/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/img/posts/pemrograman-mobile/fast-track-dart-flutter.png" referrerpolicy="no-referrer">
+            </div>]]></description>
+</item><item>
     <title>Belajar Dart: Asynchronous</title>
     <link>https://afrandormd.github.io/posts/pemrograman-mobile/asynchronous-dart/</link>
     <pubDate>Sat, 13 Apr 2024 22:47:35 &#43;0700</pubDate><author>
@@ -75,13 +83,5 @@
     <description><![CDATA[<div class="featured-image">
                 <img src="/img/posts/git/tutorial-git.png" referrerpolicy="no-referrer">
             </div>Pada tutorial kali ini kita akan belajar memulai praktik installasi dan konfigurasi Git]]></description>
-</item><item>
-    <title>Apa Itu Git dan Seberapa Penting Bagi Programmer?</title>
-    <link>https://afrandormd.github.io/posts/git/apa-itu-git/</link>
-    <pubDate>Sun, 17 Mar 2024 13:05:26 &#43;0700</pubDate><author>
-                        <name>Afrando</name><uri>https://afrandormd.github.io</uri><email>afrandoshareinramadhan@gmail.com</email></author><guid>https://afrandormd.github.io/posts/git/apa-itu-git/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/img/posts/git/tutorial-git.png" referrerpolicy="no-referrer">
-            </div>Git merupakan salah satu version control system yang dimana tools ini sangat diperlukan untuk melakukan tracking perubahan source code dan melakukan kolaborasi antar sesama programmer.]]></description>
 </item></channel>
 </rss>

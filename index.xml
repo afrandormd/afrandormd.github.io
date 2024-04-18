@@ -3,9 +3,17 @@
         <title>afrandormd</title>
         <link>https://afrandormd.github.io/</link>
         <description>afrandormd</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 17 Apr 2024 21:29:40 &#43;0700</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 18 Apr 2024 21:36:47 &#43;0700</lastBuildDate>
             <atom:link href="https://afrandormd.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Loop Dart</title>
+    <link>https://afrandormd.github.io/posts/pemrograman-mobile/loop-dart/</link>
+    <pubDate>Thu, 18 Apr 2024 21:36:47 &#43;0700</pubDate><author>
+                        <name>Afrando</name><uri>https://afrandormd.github.io</uri><email>afrandoshareinramadhan@gmail.com</email></author><guid>https://afrandormd.github.io/posts/pemrograman-mobile/loop-dart/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/img/posts/pemrograman-mobile/fast-track-dart-flutter.png" referrerpolicy="no-referrer">
+            </div>]]></description>
+</item><item>
     <title>Exceptions Dart</title>
     <link>https://afrandormd.github.io/posts/pemrograman-mobile/exceptions-dart/</link>
     <pubDate>Wed, 17 Apr 2024 21:29:40 &#43;0700</pubDate><author>
@@ -77,13 +85,5 @@
     <description><![CDATA[<div class="featured-image">
                 <img src="/img/posts/git/tutorial-git.png" referrerpolicy="no-referrer">
             </div>Pada tutorial kali ini kita akan belajar cara inisialisasi proyek kita dengan Git dan cara membuat repositori baru dengan Git]]></description>
-</item><item>
-    <title>Belajar Git 01: Installasi dan Konfigurasi Awal Git</title>
-    <link>https://afrandormd.github.io/posts/git/installasi-git/</link>
-    <pubDate>Sat, 23 Mar 2024 22:12:28 &#43;0700</pubDate><author>
-                        <name>Afrando</name><uri>https://afrandormd.github.io</uri><email>afrandoshareinramadhan@gmail.com</email></author><guid>https://afrandormd.github.io/posts/git/installasi-git/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/img/posts/git/tutorial-git.png" referrerpolicy="no-referrer">
-            </div>Pada tutorial kali ini kita akan belajar memulai praktik installasi dan konfigurasi Git]]></description>
 </item></channel>
 </rss>

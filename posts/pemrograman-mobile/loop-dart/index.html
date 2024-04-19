@@ -35,7 +35,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https://afrandormd.github.io/posts/pemrograman-mobile/loop-dart/"
-        },"genre": "posts","keywords": "dart","wordcount":  46 ,
+        },"genre": "posts","keywords": "dart","wordcount":  276 ,
         "url": "https://afrandormd.github.io/posts/pemrograman-mobile/loop-dart/","datePublished": "2024-04-18T21:36:47+07:00","dateModified": "2024-04-18T21:36:47+07:00","publisher": {
             "@type": "Organization",
             "name": "Afrando Sharein Ramadhan"},"authors": [{
@@ -119,7 +119,7 @@
             <div class="post-meta-line">
                 <span class="post-author"><span class='author'><span class="author fas fa-user-circle fa-fw"></span><span class='screen-reader-text'>  </span><a href='https://afrandormd.github.io/authors/afrando'>Afrando</a></span>
                 </span>&nbsp;<span class="post-category">included in </span>&nbsp;<span class="post-series">series <a href="/series/pemrograman-mobile/"><i class="far fa-list-alt fa-fw"></i>Pemrograman Mobile</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2024-04-18">2024-04-18</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2024-04-18">2024-04-18</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;46 words&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;One minute&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2024-04-18">2024-04-18</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime="2024-04-18">2024-04-18</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;276 words&nbsp;<i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;</div>
         </div><div class="featured-image"><img
         
         loading="eager"
@@ -129,7 +129,63 @@
     <a href="#loop-pada-dart" class="header-mark"></a>Loop pada Dart</h2><p><strong>Perulangan</strong> <em>(atau looping)</em> dalam pemrograman adalah teknik untuk mengeksekusi serangkaian instruksi secara berulang kali selama kondisi tertentu terpenuhi. Dengan menggunakan perulangan, kita dapat menjalankan kode secara efisien tanpa harus menuliskan instruksi yang sama berulang kali.</p>
 <h2 id="beberapa-jenis-perulangan-dalam-dart" class="headerLink">
     <a href="#beberapa-jenis-perulangan-dalam-dart" class="header-mark"></a>Beberapa Jenis Perulangan dalam Dart:</h2><p><strong>for Loop</strong><br>
-Perulangan <code>for</code> digunakan</p></div>
+Perulangan <code>for</code> digunakan untuk mengeksekusi blok kode berulang kali dengan jumlah iterasi yang sudah diketahui sebelumnya.<br>
+<strong>Contoh Penulisan:</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-dart" data-lang="dart"><span class="line"><span class="cl"><span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="n">i</span> <span class="o">=</span> <span class="m">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="m">5</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="n">print</span><span class="p">(</span><span class="s1">&#39;Iterasi ke-</span><span class="si">$</span><span class="n">i</span><span class="s1">&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Output:
+</span></span></span><span class="line"><span class="cl"><span class="c1">// Iterasi ke-0
+</span></span></span><span class="line"><span class="cl"><span class="c1">// Iterasi ke-1
+</span></span></span><span class="line"><span class="cl"><span class="c1">// Iterasi ke-2
+</span></span></span><span class="line"><span class="cl"><span class="c1">// Iterasi ke-3
+</span></span></span><span class="line"><span class="cl"><span class="c1">// Iterasi ke-4
+</span></span></span></code></pre></div><p><strong>while Loop</strong><br>
+Perulangan <code>while</code> digunakan untuk mengeksekusi blok kode selama kondisi tertentu terpenuhi.<br>
+<strong>Contoh Penulisan:</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-dart" data-lang="dart"><span class="line"><span class="cl"><span class="kd">var</span> <span class="n">i</span> <span class="o">=</span> <span class="m">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">while</span> <span class="p">(</span><span class="n">i</span> <span class="o">&lt;</span> <span class="m">5</span> <span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="n">print</span><span class="p">(</span><span class="s1">&#39;Iterasi ke-</span><span class="si">$</span><span class="n">i</span><span class="s1">&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="n">i</span><span class="o">++</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Output:
+</span></span></span><span class="line"><span class="cl"><span class="c1">// Iterasi ke-0
+</span></span></span><span class="line"><span class="cl"><span class="c1">// Iterasi ke-1
+</span></span></span><span class="line"><span class="cl"><span class="c1">// Iterasi ke-2
+</span></span></span><span class="line"><span class="cl"><span class="c1">// Iterasi ke-3
+</span></span></span><span class="line"><span class="cl"><span class="c1">// Iterasi ke-4
+</span></span></span></code></pre></div><p><strong>do-while Loop</strong><br>
+Perulangan <code>do-while</code> mirip dengan <code>while</code>, namun blok kode dieksekusi setidaknya satu kali sebelum kondisi diperiksa.
+<strong>Contoh Penulisan:</strong></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-dart" data-lang="dart"><span class="line"><span class="cl"><span class="kd">var</span> <span class="n">i</span> <span class="o">=</span> <span class="m">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">do</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="n">print</span><span class="p">(</span><span class="s1">&#39;Iterasi ke-</span><span class="si">$</span><span class="n">i</span><span class="s1">&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="n">i</span><span class="o">++</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span> <span class="k">while</span> <span class="p">(</span><span class="n">i</span> <span class="o">&lt;</span> <span class="m">5</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Output:
+</span></span></span><span class="line"><span class="cl"><span class="c1">// Iterasi ke-0
+</span></span></span><span class="line"><span class="cl"><span class="c1">// Iterasi ke-1
+</span></span></span><span class="line"><span class="cl"><span class="c1">// Iterasi ke-2
+</span></span></span><span class="line"><span class="cl"><span class="c1">// Iterasi ke-3
+</span></span></span><span class="line"><span class="cl"><span class="c1">// Iterasi ke-4
+</span></span></span></code></pre></div><h2 id="perbedaan-for-while-dan-do-while-loop" class="headerLink">
+    <a href="#perbedaan-for-while-dan-do-while-loop" class="header-mark"></a>Perbedaan for, while, dan do-while Loop</h2><p>Meskipun ketiga jenis perulangan (<code>for</code>, <code>while</code>, dan <code>do-while</code>) dapat menghasilkan output yang sama, namun dalam beberapa kasus, mereka memiliki perbedaan dalam bagaimana dan kapan kondisi perulangan di evaluasi, serta dalam gaya penulisannya.</p>
+<p><strong>for Loop</strong></p>
+<ul>
+<li>Digunakan ketika jumlah iterasi sudah diketahui sebelumnya atau ketika ada iterasi dengan urutan tertentu.</li>
+<li>Syarat perulangan dievaluasi di awal sebelum setiap iterasi.</li>
+</ul>
+<p><strong>while Loop</strong></p>
+<ul>
+<li>Digunakan ketika kondisi untuk melakukan iterasi diperiksa sebelum setiap iterasi.</li>
+</ul>
+<p><strong>do-while Loop</strong></p>
+<ul>
+<li>Mirip dengan <code>while</code> loop, namun blok kode dieksekusi setidaknya satu kali sebelum kondisi diperiksa.</li>
+</ul></div>
 
         <div class="post-footer" id="post-footer">
     <div class="post-info">
